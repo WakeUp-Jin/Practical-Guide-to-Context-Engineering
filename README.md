@@ -8,7 +8,7 @@
   <h2>📚 上下文工程实践指南</h2>
   <p><em>从理论到实践，从基础到进阶，构建你的上下文工程体系</em></p>
 </div>
-<!-- https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering -->
+
 <div align="center">
   <img src="https://img.shields.io/github/stars/WakeUp-Jin/Practical-Guide-to-Context-Engineering?style=for-the-badge&logo=github&color=ff6b6b" alt="GitHub stars"/>
   <img src="https://img.shields.io/github/forks/WakeUp-Jin/Practical-Guide-to-Context-Engineering?style=for-the-badge&logo=github&color=4ecdc4" alt="GitHub forks"/>
