@@ -1,4 +1,5 @@
 export default {
+    base:'https://wakeup-jin.github.io/Practical-Guide-to-Context-Engineering/',
     // site-level options
     title: '上下文工程实践指南',
     description: '从理论到实践，从基础到进阶，构建你的上下文工程体系',
