@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+src/.env
+.env
+.env.dev
+.env.localhost
+.env.test
+.env.prod
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build output
+dist/
+build/
+src/dataTreating/store/
+src/store/
+prisma/generated/
+# src/DB/
+
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Coverage reports
+coverage/
+
+# Other
+*.tgz
+# LangGraph API
+.langgraph_api
