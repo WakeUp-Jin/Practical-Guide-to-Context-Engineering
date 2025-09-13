@@ -1,0 +1,30 @@
+name: Deploy VitePress
+
+on:
+  push:
+    branches:
+      - main  # 推送到 main 分支时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci  # 或 pnpm install
+
+      - name: Build VitePress site
+        run: npm run docs:build  # 执行 vitepress build docs
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
