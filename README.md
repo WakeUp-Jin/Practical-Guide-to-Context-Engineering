@@ -136,7 +136,7 @@ RAG 只是相关上下文实现的其中一种技术手段，其实还有更多�
 - [第十三章 Token压缩策略](./docs/上下文管理/Token压缩策略.md)：各类压缩方法对比：摘要、向量聚合、句子窗口检索，结合真实应用案例 ✅
 
 ### 第四部分：Agent架构设计
-- [第十四章 两种世界的交互形态：协同Agent与自主Agent](./docs/Agent形态/两种世界的交互形态：协同Agent与自主Agent.md) ✅
+- [第十四章 两种世界的交互形态：协同Agent与自主Agent](./docs/Agent形态/两种世界的交互形态：协同Agent与自主Agent.md)：Agent的两种形态：协同Agent与自主Agent以及开发策略 ✅
 
 ### 第五部分：Agent评估
 
