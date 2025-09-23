@@ -9,7 +9,7 @@
 
 # 一、分块与向量化
 ## 1.1、分块
-分块的大小是需要考虑的一个参数，这个参数取决于使用的嵌入模型能够处理的最大 token 长度，不同的嵌入模型的最大 Token 是不同的 `<font style="color:rgb(0, 0, 0);">Qwen/Qwen3-Embedding-8B</font>`<font style="color:rgb(0, 0, 0);">嵌入模型最大可以处理 32k 的 Token 数量，</font>`<font style="color:rgb(0, 0, 0);">BAAI/bge-m3</font>`<font style="color:rgb(0, 0, 0);">嵌入模型最大可以处理的只有 8k 的 Token 数量</font>
+分块的大小是需要考虑的一个参数，这个参数取决于使用的嵌入模型能够处理的最大 token 长度，不同的嵌入模型的最大 Token 是不同的 Qwen/Qwen3-Embedding-8B <font style="color:rgb(0, 0, 0);">嵌入模型最大可以处理 32k 的 Token 数量，</font>BAAI/bge-m3<font style="color:rgb(0, 0, 0);">嵌入模型最大可以处理的只有 8k 的 Token 数量</font>
 
 <font style="color:rgb(0, 0, 0);">关于分块最重要的是：</font>**<font style="color:rgb(0, 0, 0);">分块要足够的长，能让大模型在推理时有足够的上下文，同时分块又要足够的具体，以便生成的向量能更准确地表达语义，从而搜索更高效</font>**
 
@@ -28,7 +28,7 @@
 
 
 
-在选择嵌入模型是，需要考虑两个方面
+在选择嵌入模型时，需要考虑两个方面
 
 1. 向量维度的大小（维度过低会语义丢失，维度过高增加存储和计算成本）
 2. 模型支持的语言范围（确保支持你的文本语言）
