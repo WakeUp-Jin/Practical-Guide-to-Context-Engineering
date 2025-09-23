@@ -14,7 +14,7 @@ Redis 缓存后端的设计，比多后端设计更加简单直观，使用便�
 ## 二、架构设计
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/L9N9bNDUIocNUNxh25KcM7FRn2e](https://gcntfv628ebr.feishu.cn/file/L9N9bNDUIocNUNxh25KcM7FRn2e)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/29674456/1757158375881-bea14455-0b54-485e-a418-18e7b7213468.png)
+![](./image/image%20(25).png)
 
 
 
