@@ -25,7 +25,7 @@ export default {
             { text: '第四章 RAG技术', 
               items: [
                 { text: 'RAG策略', link: '/RAG技术/RAG策略-index' },
-                { text: '编码器和LLM微调', link: '' }
+                { text: '编码器和LLM微调'}
               ]
             }
           ]
@@ -37,8 +37,8 @@ export default {
             { text: '第六章 工具管理模块',
               items: [
                 { text: '工具管理', link: '/工具管理模块/工具管理' },
-                { text: '模型调用工具能力评估', link: '' },
-                { text: 'MCP与MCP的安全', link: '' }
+                { text: '模型调用工具能力评估',  },
+                { text: 'MCP与MCP的安全',  }
               ]
             },
             { text: '第七章 用户记忆模块',  },
@@ -79,13 +79,13 @@ export default {
         {
           text: '第五部分：Agent评估',
           items: [
-            { text: '敬请期待', link: '/agent-evaluation/' }
+            { text: '敬请期待' }
           ]
         },
         {
           text: '第六部分：上下文工程实践项目',
           items: [
-            { text: '敬请期待', link: '/practical-projects/' }
+            { text: '敬请期待' }
           ]
         }
       ]
