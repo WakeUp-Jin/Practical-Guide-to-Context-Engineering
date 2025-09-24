@@ -90,6 +90,4 @@ export default {
         }
       ]
     },
-    markdown: {
-    }
   }
