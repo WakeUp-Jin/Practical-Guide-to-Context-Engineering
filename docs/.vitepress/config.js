@@ -91,31 +91,5 @@ export default {
       ]
     },
     markdown: {
-      // config(md) {
-      //   const defaultImageRule = md.renderer.rules.image
-      //   md.renderer.rules.image = (tokens, idx, options, env, self) => {
-      //     const token = tokens[idx]
-      //     const src = token.attrGet('src') || ''
-      //     const alt = token.content || ''
-      //     // 允许通过 title 手动关闭替换：![alt](src "raw")
-      //     const title = token.attrGet('title') || ''
-      //     if (title === 'raw') {
-      //       // 还原默认 <img> 行为
-      //       return defaultImageRule
-      //         ? defaultImageRule(tokens, idx, options, env, self)
-      //         : self.renderToken(tokens, idx, options)
-      //     }
-      //     // 对于绝对路径和外部链接的图片，使用默认的 img 标签
-      //     if (src.startsWith('/') || src.startsWith('http')) {
-      //       return defaultImageRule
-      //         ? defaultImageRule(tokens, idx, options, env, self)
-      //         : self.renderToken(tokens, idx, options)
-      //     }
-      //     // 只对相对路径的本地图片使用自定义组件（提供懒加载）
-      //     return `<ImageWithStatus src="${src}" alt="${md.utils.escapeHtml(
-      //       alt
-      //     )}" />`
-      //   }
-      // }
     }
   }
