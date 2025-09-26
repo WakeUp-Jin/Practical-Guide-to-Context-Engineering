@@ -30,7 +30,7 @@
 
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/EdQObfoV0oR6IHx48CGcPWPnnEb](https://gcntfv628ebr.feishu.cn/file/EdQObfoV0oR6IHx48CGcPWPnnEb)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/29674456/1757259217213-bc4fd751-bc6f-415e-ab3b-cde588ea3d19.png)
+![LLM服务层的实现设计](./image/image%20(30).png)
 
 
 
