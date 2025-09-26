@@ -1,0 +1,13 @@
+NOTICE
+
+项目名称: 上下文工程实践
+原作者: WakeUp-Jin
+原始仓库: https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering
+
+许可协议: CC BY-NC-SA 4.0 (署名-非商业性使用-相同方式共享 4.0 国际)
+
+署名要求:
+在再分发或修改本作品时，请保留以下信息：
+"本作品基于 WakeUp-Jin 的项目 (https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering) 修改，原作品采用 CC BY-NC-SA 4.0 协议发布。"
+
+联系邮箱: 2385472291@qq.com （可选）
