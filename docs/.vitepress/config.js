@@ -4,6 +4,9 @@ export default {
     title: '上下文工程实践指南',
     description: '从理论到实践，从基础到进阶，构建你的上下文工程体系',
     lastUpdated: true,
+    head:[
+      ['link', { rel: 'icon', href: '/Practical-Guide-to-Context-Engineering/favicon.ico',type: 'image/x-icon' }]
+    ],
   
     themeConfig: {
       // theme-level options
