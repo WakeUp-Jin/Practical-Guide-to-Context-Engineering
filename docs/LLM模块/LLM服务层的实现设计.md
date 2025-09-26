@@ -32,8 +32,6 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/EdQObfoV0oR6IHx48CGcPWP
 
 ![LLM服务层的实现设计](./image/image%20(30).png)
 
-
-
 ## 一、LLM 服务接口统一设计
 LLM 服务接口定义了统一的契约，包含四个核心方法
 
