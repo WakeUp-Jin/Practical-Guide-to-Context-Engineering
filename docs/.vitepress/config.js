@@ -3,6 +3,7 @@ export default {
     base:'/Practical-Guide-to-Context-Engineering/',
     title: '上下文工程实践指南',
     description: '从理论到实践，从基础到进阶，构建你的上下文工程体系',
+    lastUpdated: true,
   
     themeConfig: {
       // theme-level options
@@ -73,7 +74,7 @@ export default {
         {
           text: '第四部分：Agent架构设计',
           items: [
-            { text: '两种世界的交互形态：协同Agent与自主Agent', link: '/Agent形态/两种世界的交互形态：协同Agent与自主Agent' }
+            { text: '第十四章 两种世界的交互形态：协同Agent与自主Agent', link: '/Agent形态/两种世界的交互形态：协同Agent与自主Agent' }
           ]
         },
         {
@@ -88,6 +89,26 @@ export default {
             { text: '敬请期待' }
           ]
         }
-      ]
+      ],
+
+      // editLink: {
+      //   pattern: 'https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering/edit/main/docs/:path',
+      //   text: '在 GitHub 上编辑此页'
+      // },
+
+      //右侧的大纲
+      outline:{level:[1,2,3],label:"本章目录"},
+      // 搜索（v1 内置本地搜索足够好；若要 Algolia，配置 algolia 字段）
+      search: { provider: 'local' },
+
+      // 社交链接
+      socialLinks: [{ icon: 'github', link: 'https://github.com/your/repo' }],
+      lastUpdated:{
+        text:"最后更新时间",
+        formatOptions:{
+          dateStyle:"long",
+          timeStyle:"short"
+        }
+      }
     },
   }
