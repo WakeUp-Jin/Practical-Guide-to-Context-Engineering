@@ -1,0 +1,109 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "上下文工程实践指南",
+  "description": "从理论到实践，从基础到进阶，构建你的上下文工程体系",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "指南",
+        "groups": [
+          {
+            "group": "前言",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "第一部分：上下文工程基础技术",
+            "pages": [
+              "基础技术/数据持久化",
+              "基础技术/向量存储和嵌入模型",
+              "基础技术/知识图谱",
+              "RAG技术/RAG策略-index",
+              "RAG技术/编码器和LLM微调"
+            ]
+          },
+          {
+            "group": "第二部分：上下文组成工程实践",
+            "pages": [
+              "工程实践/系统提示词模块",
+              "工具管理模块/工具管理",
+              "工程实践/模型调用工具能力评估",
+              "工程实践/MCP与MCP的安全",
+              "工程实践/用户记忆模块",
+              "会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
+              "会话存储模块/多后端存储设计-备份降级策略",
+              "结构化输出模块/JSON结构化输出的方法",
+              "结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
+              "工程实践/相关上下文模块",
+              "LLM模块/LLM服务层的实现设计",
+              "工程实践/三大LLM提供商实现策略细节"
+            ]
+          },
+          {
+            "group": "第三部分：上下文管理",
+            "pages": [
+              "上下文管理/上下文管理",
+              "上下文管理/Token压缩策略"
+            ]
+          },
+          {
+            "group": "第四部分：Agent架构设计",
+            "pages": [
+              "Agent形态/两种世界的交互形态：协同Agent与自主Agent"
+            ]
+          },
+          {
+            "group": "第五部分：Agent评估",
+            "pages": [
+              "评估/敬请期待"
+            ]
+          },
+          {
+            "group": "第六部分：上下文工程实践项目",
+            "pages": [
+              "实践项目/敬请期待"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering",
+          "icon": "github"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering"
+    }
+  }
+}
