@@ -12,7 +12,7 @@ ContextManager 中的压缩机制是一个复杂的智能系统，远不止"判�
 ## 思路流程图
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/MjkHbXHWjopTSQxpXDccVDUznHf](https://gcntfv628ebr.feishu.cn/file/MjkHbXHWjopTSQxpXDccVDUznHf)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/29674456/1754311467549-cf36fabe-e50b-448e-8f61-7b45cd90b583.png)
+![Token压缩策略](./image/image%20(29).png)
 
 ## 一、压缩策略
 系统实现了三种压缩策略，每种策略适用于不同的场景：
