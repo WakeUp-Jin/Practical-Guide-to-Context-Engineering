@@ -143,6 +143,7 @@ RAG 只是相关上下文实现的其中一种技术手段，其实还有更多�
 ### 第六部分：上下文工程实践项目
 
 
+
 ## 🤝 如何贡献
 
 我希望「上下文工程实践」不仅是一个仓库，而是一个大家共同探索、共同建设的开放空间。
@@ -159,13 +160,22 @@ RAG 只是相关上下文实现的其中一种技术手段，其实还有更多�
 - [WakeUpJin-项目负责人](https://github.com/WakeUp-Jin) (一位享受阅读和积累知识的开发者)
 
 ## Star History
-
+文章合集已同步更新到微信公众号，方便手机端阅读。公众号上除了项目内容外，还会分享我平时关于开发的思考与见解。
 <!-- <div align='center'>
     <img src="./docs/images/star-history-2025911.png" alt="Datawhale" width="90%">
 </div> -->
 
 <div align="center">
   <p>⭐ 如果这个项目对你有帮助，请给我们一个 Star！</p>
+</div>
+
+## 关于WakeUp-Jin
+
+文章合集也会同步更新到微信公众号，方便手机端阅读。公众号上除了项目内容外，还会分享我平时关于学习的记录和生活的思考
+
+<div align="center">
+  <img src="./docs/image/wx.jpg" alt="微信公众号二维码" width="200">
+  <p>扫描二维码关注WakeUp-Jin</p>
 </div>
 
 ## 📜 开源协议
