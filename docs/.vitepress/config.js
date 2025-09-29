@@ -77,7 +77,8 @@ export default {
         {
           text: '第四部分：Agent架构设计',
           items: [
-            { text: '第十四章 两种世界的交互形态：协同Agent与自主Agent', link: '/Agent形态/两种世界的交互形态：协同Agent与自主Agent' }
+            { text: '第十四章 两种世界的交互形态：协同Agent与自主Agent', link: '/Agent形态/两种世界的交互形态：协同Agent与自主Agent' },
+            { text: '第十五章 智能体系统构建策略：单智能体和多智能体', link: '/Agent形态/智能体系统构建策略-单智能体和多智能' }
           ]
         },
         {
