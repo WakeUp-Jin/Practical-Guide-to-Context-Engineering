@@ -160,10 +160,9 @@ RAG 只是相关上下文实现的其中一种技术手段，其实还有更多�
 - [WakeUpJin-项目负责人](https://github.com/WakeUp-Jin) (一位享受阅读和积累知识的开发者)
 
 ## Star History
-文章合集已同步更新到微信公众号，方便手机端阅读。公众号上除了项目内容外，还会分享我平时关于开发的思考与见解。
-<!-- <div align='center'>
-    <img src="./docs/images/star-history-2025911.png" alt="Datawhale" width="90%">
-</div> -->
+<div align='center'>
+    <img src="./docs/image/star-history-2025929.png" alt="Datawhale" width="90%">
+</div>
 
 <div align="center">
   <p>⭐ 如果这个项目对你有帮助，请给我们一个 Star！</p>
