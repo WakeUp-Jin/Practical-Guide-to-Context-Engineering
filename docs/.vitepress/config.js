@@ -41,6 +41,7 @@ export default {
             { text: '第六章 工具管理模块',
               items: [
                 { text: '工具管理', link: '/工具管理模块/工具管理' },
+                { text: 'ClaudeCode逆向工程（Kode）的工具定义和管理', link: '/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本' },
                 { text: '模型调用工具能力评估',  },
                 { text: 'MCP与MCP的安全',  }
               ]
@@ -62,6 +63,7 @@ export default {
             { text: '第十一章 LLM模块',
               items: [
                 { text: 'LLM服务层的实现设计', link: '/LLM模块/LLM服务层的实现设计' },
+                { text: 'Cipher的LLM 服务架构分析文档', link: '/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本' },
                 { text: '三大LLM提供商实现策略细节' }
               ]
             }
