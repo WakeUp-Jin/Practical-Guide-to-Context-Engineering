@@ -31,7 +31,8 @@ export default {
                 { text: 'RAG策略', link: '/RAG技术/RAG策略-index' },
                 { text: '编码器和LLM微调'}
               ]
-            }
+            },
+            { text: '第五章 搜索代理', link: '/搜索代理/搜索代理' }
           ]
         },
         {
