@@ -7,6 +7,9 @@ export default {
     head:[
       ['link', { rel: 'icon', href: '/Practical-Guide-to-Context-Engineering/favicon.ico',type: 'image/x-icon' }]
     ],
+    ignoreDeadLinks: [
+      /\.log$/,  // 忽略所有.log文件的dead link检查
+    ],
   
     themeConfig: {
       // theme-level options
