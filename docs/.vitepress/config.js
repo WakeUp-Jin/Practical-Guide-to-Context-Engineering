@@ -20,7 +20,8 @@ export default {
         {
           text: '前言',
           items: [
-            { text: '上下文组成' }
+            { text: '上下文组成' },
+            { text: '更新日记', link: '/更新日记/更新日记' }
           ]
         },
         {
