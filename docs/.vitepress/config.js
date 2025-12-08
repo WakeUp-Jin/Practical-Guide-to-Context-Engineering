@@ -78,21 +78,22 @@ export default {
           text: '第三部分：上下文管理',
           items: [
             { text: '第十二章 上下文管理', link: '/上下文管理/上下文管理' },
-            { text: '第十三章 Token压缩策略', link: '/上下文管理/Token压缩策略' }
+            { text: '第十三章 Token压缩策略', link: '/上下文管理/Token压缩策略' },
+            { text: '第十四章 上下文压缩：ClaudeCode、Gemini 与工具消息裁剪', link: '/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪' }
           ]
         },
         {
           text: '第四部分：Agent架构设计',
           items: [
-            { text: '第十四章 两种世界的交互形态：协同Agent与自主Agent', link: '/Agent形态/两种世界的交互形态：协同Agent与自主Agent' },
-            { text: '第十五章 智能体系统构建策略：单智能体和多智能体', link: '/Agent形态/智能体系统构建策略-单智能体和多智能体' }
+            { text: '第十五章 两种世界的交互形态：协同Agent与自主Agent', link: '/Agent形态/两种世界的交互形态：协同Agent与自主Agent' },
+            { text: '第十六章 智能体系统构建策略：单智能体和多智能体', link: '/Agent形态/智能体系统构建策略-单智能体和多智能体' }
           ]
         },
         {
           text: '第五部分：Agent评估',
           items: [
-            { text: '第十六章 Agent的评估', link: '/Agent评估/Agent的评估' },
-            { text: '第十七章 实现Agent的评估器-TS版本', link: '/Agent评估/实现Agent的评估器-TS版本' }
+            { text: '第十七章 Agent的评估', link: '/Agent评估/Agent的评估' },
+            { text: '第十八章 实现Agent的评估器-TS版本', link: '/Agent评估/实现Agent的评估器-TS版本' }
           ]
         },
         {
