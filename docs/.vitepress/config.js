@@ -79,7 +79,7 @@ export default {
           items: [
             { text: '第十二章 上下文管理', link: '/上下文管理/上下文管理' },
             { text: '第十三章 Token压缩策略', link: '/上下文管理/Token压缩策略' },
-            { text: '第十四章 上下文压缩：ClaudeCode、Gemini 与工具消息裁剪', link: '/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪' }
+            { text: '第十四章 上下文压缩：ClaudeCode、Gemini 与工具消息裁剪', link: '/上下文管理/上下文压缩-ClaudeCode、Gemini与工具消息裁剪.md' }
           ]
         },
         {
