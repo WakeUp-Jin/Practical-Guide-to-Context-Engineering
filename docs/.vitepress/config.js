@@ -91,7 +91,8 @@ export default {
         {
           text: '第五部分：Agent评估',
           items: [
-            { text: '敬请期待' }
+            { text: '第十六章 Agent的评估', link: '/Agent评估/Agent的评估' },
+            { text: '第十七章 实现Agent的评估器-TS版本', link: '/Agent评估/实现Agent的评估器-TS版本' }
           ]
         },
         {
