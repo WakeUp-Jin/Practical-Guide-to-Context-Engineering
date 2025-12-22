@@ -1,7 +1,7 @@
 # 大模型应用开发 - 上下文工程实践指南
 
 <div align='center'>
-  <img src="./docs/image/logo.png" alt="Practical-guide-to-context-engineering Logo" width="100%">
+  <img src="./docs/image/logo3.jpg" alt="Practical-guide-to-context-engineering Logo" width="100%">
 </div>
 
 <div align="center">
