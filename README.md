@@ -148,6 +148,7 @@ RAG 只是相关上下文实现的其中一种技术手段，其实还有更多�
 ### 第五部分：Agent评估
 - [第十七章 Agent的评估](./docs/Agent评估/Agent的评估.md)：Agent的评估方案和方法 ✅
 - [第十八章 实现Agent的评估器-TS版本](./docs/Agent评估/实现Agent的评估器-TS版本.md)：Agent的评估器TS版本实现 ✅
+- [第十九章 揭秘 AI 代理的评估 - 多种Agent的评估方法](./docs/Agent评估/评估多种类型Agent的方法.md)：多种Agent的评估方法 ✅
 
 ### 第六部分：上下文工程实践项目
 
