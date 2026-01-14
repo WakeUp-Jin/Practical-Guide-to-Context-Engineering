@@ -93,7 +93,8 @@ export default {
           text: '第五部分：Agent评估',
           items: [
             { text: '第十七章 Agent的评估', link: '/Agent评估/Agent的评估' },
-            { text: '第十八章 实现Agent的评估器-TS版本', link: '/Agent评估/实现Agent的评估器-TS版本' }
+            { text: '第十八章 实现Agent的评估器-TS版本', link: '/Agent评估/实现Agent的评估器-TS版本' },
+            { text: '第十九章 揭秘 AI 代理的评估 - 多种Agent的评估方法', link: '/Agent评估/评估多种类型Agent的方法' }
           ]
         },
         {
