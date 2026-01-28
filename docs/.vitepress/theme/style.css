@@ -1,0 +1,53 @@
+/* ===== 图片放大功能样式 ===== */
+
+/* 图片容器 - 用于定位放大图标 */
+.vp-doc img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+/* 悬浮时图片轻微放大 */
+.vp-doc img:hover {
+  transform: scale(1.02);
+}
+
+/* 图片外层容器（p 标签包裹 img） */
+.vp-doc p:has(> img) {
+  position: relative;
+  display: inline-block;
+}
+
+/* 放大图标 - 使用伪元素 */
+.vp-doc p:has(> img)::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  /* 放大镜 SVG 图标 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7'/%3E%3C/svg%3E");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 悬浮时显示放大图标 */
+.vp-doc p:has(> img):hover::after {
+  opacity: 1;
+}
+
+/* medium-zoom 遮罩层级 */
+.medium-zoom-overlay {
+  z-index: 100;
+}
+
+.medium-zoom-image--opened {
+  z-index: 101;
+  cursor: zoom-out;
+}
