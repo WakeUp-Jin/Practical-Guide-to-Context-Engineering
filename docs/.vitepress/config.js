@@ -99,7 +99,13 @@ export default {
           ]
         },
         {
-          text: '第六部分：上下文工程实践项目',
+          text: '第六部分：AI协作编码与上下文工程',
+          items: [
+            { text: '第二十章 Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充', link: '/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充' }
+          ]
+        },
+        {
+          text: '第七部分：上下文工程实践项目',
           items: [
             { text: '敬请期待' }
           ]
