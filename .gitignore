@@ -40,3 +40,5 @@ coverage/
 *.tgz
 # LangGraph API
 .langgraph_api
+
+docs/.vitepress/cache/

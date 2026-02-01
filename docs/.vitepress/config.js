@@ -123,7 +123,7 @@ export default {
       search: { provider: 'local' },
 
       // 社交链接
-      socialLinks: [{ icon: 'github', link: 'https://github.com/your/repo' }],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering' }],
       lastUpdated:{
         text:"最后更新时间",
         formatOptions:{
