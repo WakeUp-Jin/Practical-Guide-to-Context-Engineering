@@ -1,25 +1,26 @@
 # 上下文压缩：ClaudeCode、Gemini 与工具消息裁剪
 
 ## 前言
-📝 <font style="color:rgb(20, 20, 19);">压缩是指对接近上下文窗口限制的对话进行内容总结，并重新初始化一个新的上下文窗口。其核心在于提炼关键的上下文窗口的内容，使 Agent 能够以最小的性能下降继续执行。</font>
+📝 压缩是指对接近上下文窗口限制的对话进行内容总结，并重新初始化一个新的上下文窗口。其核心在于提炼关键的上下文窗口的内容，使 Agent 能够以最小的性能下降继续执行。
 
-<font style="color:rgb(20, 20, 19);">分析参考来源：</font>
+分析参考来源：
 
 + ClaudeCode 逆向工程：[https://github.com/shareAI-lab/analysis_claude_code](https://github.com/shareAI-lab/analysis_claude_code)
 + gemini-cli：[https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
-+ 《<font style="color:rgb(20, 20, 19);">Effective context engineering for AI agents</font>》[https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
-+ 《<font style="color:rgb(20, 20, 19);">Managing context on the Claude Developer Platform</font>》：[https://www.anthropic.com/news/context-management](https://www.anthropic.com/news/context-management)
++ 《Effective context engineering for AI agents》[https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
++ 《Managing context on the Claude Developer Platform》：[https://www.anthropic.com/news/context-management](https://www.anthropic.com/news/context-management)
 
 ## 一、大模型压缩-ClaudeCode 的提示词详解
 Claude 团队在他们自己的研究分享文章中提到：在 ClaudeCode 中是直接使用模型来进行总结摘要达到压缩上下文的目的
 
-> In Claude Code, for example, we implement this by passing the message history to the model to summarize and compress the most critical details. The model preserves architectural decisions, unresolved bugs, and implementation details while discarding redundant tool outputs or messages.   在 Claude Code 中，我们通过将消息历史传递给模型来实现这一点，以总结和压缩最关键的信息。模型保留架构决策、未解决的错误和实现细节，同时丢弃冗余的工具输出或消息。
+> In Claude Code, for example, we implement this by passing the message history to the model to summarize and compress the most critical details. The model preserves architectural decisions, unresolved bugs, and implementation details while discarding redundant tool outputs or messages.   
+>在 Claude Code 中，我们通过将消息历史传递给模型来实现这一点，以总结和压缩最关键的信息。模型保留架构决策、未解决的错误和实现细节，同时丢弃冗余的工具输出或消息。
 >
-
 
 
 那么我们接下来一起来仔细分析一下 ClaudeCode 中关于`/compact` 命令的提示词吧（该提示词来源于逆向工程）
 
+::: details 点击展开完整代码
 ```markdown
 # 中文版本 (Chinese Version)
 
@@ -152,6 +153,7 @@ Claude 团队在他们自己的研究分享文章中提到：在 ClaudeCode 中�
 当你使用压缩时 - 请关注测试输出和代码更改。逐字包含文件读取。
 
 ```
+:::
 
 在上面的提示词中，有几点值得思索学习一下：
 
@@ -251,11 +253,11 @@ gemini-cli 的实现和 ClaudeCode 一样，都是使用大模型来直接生成
 
 这一节我们使用的是**上下文压缩策略- 清理工具的输入和输出**以达到上下文压缩的目的，这个设计理念在 Claude 团队中得到验证
 
-> **Context editing** automatically clears stale tool calls and results from within the context window when approaching token limits. As your agent executes tasks and accumulates tool results, context editing removes stale content while preserving the conversation flow, effectively extending how long agents can run without manual intervention. This also increases the effective model performance as Claude focuses only on relevant context.  上下文编辑在接近 token 限制时，会自动清除上下文窗口中的过时工具调用和结果。当你的代理执行任务并积累工具结果时，上下文编辑会移除过时内容，同时保留对话流程，有效延长代理无需人工干预即可运行的时间。这也有助于提升有效模型性能，因为 Claude 只会关注相关上下文
+> **Context editing** automatically clears stale tool calls and results from within the context window when approaching token limits. As your agent executes tasks and accumulates tool results, context editing removes stale content while preserving the conversation flow, effectively extending how long agents can run without manual intervention. This also increases the effective model performance as Claude focuses only on relevant context.  
+>上下文编辑在接近 token 限制时，会自动清除上下文窗口中的过时工具调用和结果。当你的代理执行任务并积累工具结果时，上下文编辑会移除过时内容，同时保留对话流程，有效延长代理无需人工干预即可运行的时间。这也有助于提升有效模型性能，因为 Claude 只会关注相关上下文
 >
 
 ![上下文压缩-工具消息裁剪](./image/image%20(49).png)
-
 
 
 我们仔细回顾一下上下文管理和这些大模型应用，最消耗上下文的工具是读取工具，会大量读取文件和内容，在使用 ClaudeCode 这类工具的时候，在任务完成之前会先读取相关的内容，其实用户本身的输入和模型本身的输出并不多，大部分都是工具的调用，尤其是工具的输出
@@ -270,6 +272,7 @@ gemini-cli 的实现和 ClaudeCode 一样，都是使用大模型来直接生成
 + 判断是否全部删除还是保留最近的 N 次工具调用
 + 得到合适的上下文
 
+::: details 点击展开完整代码
 ```typescript
 //LLM的消息格式
 export interface Message {
@@ -459,7 +462,7 @@ export function getCompressionStats(
 }
 
 ```
-
+:::
 
 
 ## 四、上下文压缩-中间和最旧策略的选择
@@ -481,7 +484,6 @@ export function getCompressionStats(
 1. 第一层：基于供应商｜模型的选择
 2. 第二层：基于对话特征的选择
 3. 第三层：置信度的判断
-
 
 
 ### 4.2、根据供应商和模型进行选择
@@ -708,7 +710,6 @@ const messagePreservation = 10 / 15 = 0.667;
 const efficiency = 0.356 * 0.6 + 0.667 * 0.4 = 0.2136 + 0.2668 = 0.4804;
 ```
 
-****
 
 **结果选择**
 

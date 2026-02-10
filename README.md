@@ -180,7 +180,7 @@ RAG 只是相关上下文实现的其中一种技术手段，其实还有更多�
 
 ## Star History
 <div align='center'>
-    <img src="./docs/image/star-history-20251114.png" alt="Datawhale" width="90%">
+    <img src="./docs/image/star-history-2026210.png" alt="Datawhale" width="90%">
 </div>
 
 <div align="center">

@@ -86,7 +86,7 @@
 
 # 四、协同 Agent 的实现参考
 ## 4.1、Cursor 的实现细节
-![](./image/image%20(23).png)
+![Cursor 协同 Agent 实现细节](./image/image%20(23).png)
 
 大模型中上下文有两种类型：
 

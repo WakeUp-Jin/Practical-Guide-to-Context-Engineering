@@ -89,6 +89,7 @@ export interface ILLMService {
 
 例如 openAIService 的实现
 
+::: details 点击展开完整代码 - OpenAIService 实现
 ```typescript
 import { ToolSet } from '../../../mcp/types.js';
 import { MCPManager } from '../../../mcp/manager.js';
@@ -378,6 +379,7 @@ export class OpenAIService implements ILLMService {
 }
 
 ```
+:::
 
 ## 二、LLM 工厂函数的创建
 1. 辅助函数的创建：key 和 url 的获取
@@ -485,6 +487,7 @@ export class OpenAIService implements ILLMService {
 
 
 
+::: details 点击展开完整代码
 ```typescript
 function _createLLMService(
 	config: LLMConfig,
@@ -665,9 +668,10 @@ function _createLLMService(
 	}
 }
 ```
+:::
 
 ## 三、消息格式化器
-![](https://cdn.nlark.com/yuque/0/2025/png/29674456/1757262665033-12c578b7-af03-44f4-8c74-42f3b0a5abd6.png)
+![消息格式化器架构](./image/image%20(71).png)
 
 
 

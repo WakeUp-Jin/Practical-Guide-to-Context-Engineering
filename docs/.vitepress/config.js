@@ -1,6 +1,29 @@
 export default {
     // site-level options
     base:'/Practical-Guide-to-Context-Engineering/',
+    markdown: {
+      config: (md) => {
+        // 自定义插件：让单独的代码块也能通过 [filename] 语法显示文件名标签
+        const defaultFence = md.renderer.rules.fence
+        md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+          const token = tokens[idx]
+          const info = token.info ? token.info.trim() : ''
+          // 匹配 typescript [filename.ts] 或 js [config.js] 等格式
+          const match = info.match(/^(\w+)\s*\[([^\]]+)\](.*)$/)
+          
+          if (match) {
+            const filename = match[2]
+            // 把 info 还原成不带 [filename] 的格式，保留其他修饰符（如行号高亮）
+            token.info = match[1] + (match[3] || '')
+            const rendered = defaultFence(tokens, idx, options, env, self)
+            // 在代码块外面包一层带文件名标签的容器
+            return `<div class="code-block-with-filename"><div class="code-block-filename">${md.utils.escapeHtml(filename)}</div>${rendered}</div>`
+          }
+          
+          return defaultFence(tokens, idx, options, env, self)
+        }
+      }
+    },
     title: '上下文工程实践指南',
     description: '从理论到实践，从基础到进阶，构建你的上下文工程体系',
     lastUpdated: true,
@@ -112,10 +135,10 @@ export default {
         }
       ],
 
-      // editLink: {
-      //   pattern: 'https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering/edit/main/docs/:path',
-      //   text: '在 GitHub 上编辑此页'
-      // },
+      editLink: {
+        pattern: 'https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering/edit/main/docs/:path',
+        text: '在 GitHub 上编辑此页面'
+      },
 
       //右侧的大纲
       outline:{level:[1,2,3],label:"本章目录"},

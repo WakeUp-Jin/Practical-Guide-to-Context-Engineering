@@ -91,6 +91,7 @@ export const TEST_CASES: TestCase[] = [
 
 对于事件系统的实现，最关键的是定义到事件类型，下面是完整的事件系统实现
 
+::: details 点击展开完整代码
 ```typescript
 /**
  * 事件总线 + 数据收集器（合并版本）
@@ -234,10 +235,12 @@ class EventBus {
 // 导出单例
 export const eventBus = EventBus.getInstance();
 ```
+:::
 
 ## 四、Agent 的执行情况收集
 在 Agent 中，我们使用事件系统来收集 Agent 的执行情况，在需要收集的地方，使用 `emit`来触发相应的事件函数
 
+::: details 点击展开完整代码
 ```typescript
 /**
  * 简单Agent实现
@@ -387,6 +390,7 @@ export async function simpleAgent(userInput: string): Promise<AgentResult> {
 }
 
 ```
+:::
 
 
 
@@ -395,6 +399,7 @@ export async function simpleAgent(userInput: string): Promise<AgentResult> {
 
 简单的一些的评估函数如下，只是做了一层简单的判断
 
+::: details 点击展开完整代码
 ```typescript
 /**
  * 评估函数 - 简化版本
@@ -507,6 +512,7 @@ export function formatResult(result: EvaluateResult): string {
 
 
 ```
+:::
 
 
 

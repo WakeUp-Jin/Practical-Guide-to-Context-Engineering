@@ -34,7 +34,7 @@ npm create context-template
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/YAS4b3tgIoapG4xQlRecBv09nLb](https://gcntfv628ebr.feishu.cn/file/YAS4b3tgIoapG4xQlRecBv09nLb)
 
 <!-- 这是一张图片，ocr 内容为：工具定义和输出 会话历史记录 系统提示词 结构化输出 用户输入 用户记忆 相关上下文-块文档 上下文管理函数 上下文管理 工具定义 工具参数设计 工具 管理 AGENT形态(执行器) 工具模块和管理 工具执行-控制流 函数 工具类型 LLM模块 LLM工厂函数-创建具体的LLM实例 OPENAI DEEPSEEK CLAUDE -->
-![](./image/image%20(59).png)
+![Agent 后端架构模块总览](./image/image%20(59).png)
 
 整个后端架构设计中，是按照上下文工程来做的设计，上下文管理是核心，它就是一个完整的大输入，以此输入作为前提，来解决用户的问题
 

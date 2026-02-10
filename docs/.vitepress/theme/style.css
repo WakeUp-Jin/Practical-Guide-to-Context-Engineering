@@ -51,3 +51,173 @@
   z-index: 101;
   cursor: zoom-out;
 }
+
+/* =============================================
+   全站视觉优化 — 紫色配色 (Indigo)
+   ============================================= */
+
+/* ===== 1. 配色体系 — 亮色模式 ===== */
+
+:root {
+  --vp-c-brand-1: #6366f1;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #4f46e5;
+  --vp-c-brand-soft: rgba(99, 102, 241, 0.10);
+
+  /* 按钮 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: #6366f1;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #818cf8;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: #4f46e5;
+
+  /* Hero name 渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    135deg,
+    #6366f1 0%,
+    #818cf8 50%,
+    #a78bfa 100%
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.15) 0%,
+    rgba(129, 140, 248, 0.06) 100%
+  );
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+/* ===== 2. 暗色模式 ===== */
+
+.dark {
+  --vp-c-brand-1: #818cf8;
+  --vp-c-brand-2: #a5b4fc;
+  --vp-c-brand-3: #6366f1;
+  --vp-c-brand-soft: rgba(129, 140, 248, 0.10);
+
+  --vp-button-brand-bg: #6366f1;
+  --vp-button-brand-hover-bg: #818cf8;
+  --vp-button-brand-active-bg: #4f46e5;
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    135deg,
+    #818cf8 0%,
+    #a5b4fc 50%,
+    #c4b5fd 100%
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    135deg,
+    rgba(129, 140, 248, 0.12) 0%,
+    rgba(165, 180, 252, 0.05) 100%
+  );
+}
+
+/* ===== 3. 引用块美化 ===== */
+
+.vp-doc blockquote {
+  background: rgb(233, 230, 254) !important;
+  border-left: none !important;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.vp-doc blockquote p {
+  margin: 6px 0;
+  line-height: 1.8;
+}
+
+.dark .vp-doc blockquote {
+  background: rgba(99, 102, 241, 0.08) !important;
+}
+
+/* ===== 4. 代码块圆角 ===== */
+
+.vp-doc div[class*="language-"] {
+  border-radius: 10px !important;
+}
+
+/* ===== 7. Feature 卡片悬浮效果 ===== */
+
+.VPFeature {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.VPFeature:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== 8. 页面进入微动画 ===== */
+
+.VPDoc {
+  animation: fadeInUp 0.35s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPHome {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== 9. Hero 按钮圆角 ===== */
+
+.VPHero .actions .VPButton {
+  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== 10. 自定义 tip 容器配色 ===== */
+
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* ===== 11. 代码块文件名标签 ===== */
+
+.code-block-with-filename {
+  position: relative;
+  margin: 16px 0;
+}
+
+.code-block-filename {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  background-color: var(--vp-code-tab-bg);
+  border-bottom: 1px solid var(--vp-c-divider);
+  border-radius: 8px 8px 0 0;
+  padding: 6px 16px;
+  line-height: 1.5;
+}
+
+.code-block-with-filename div[class*="language-"] {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

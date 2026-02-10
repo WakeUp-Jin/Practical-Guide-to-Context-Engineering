@@ -4,7 +4,6 @@ Redis 缓存后端的设计，比多后端设计更加简单直观，使用便�
 
 唯一的不足就是**没有多后端设计的高可用**，因为其使用 Redis 作为缓存，唯一的持久化后端只有一个，所以并没有“备用”数据的存在，在高可用方面是薄弱的，但是同时换来了开发难度的降低和架构的清晰
 
-****
 
 ## 一、为什么需要 Redis 缓存后端
 + 高性能：Redis 作为缓存层，是和系统直连的数据层，查询和写入都会非常的快速
@@ -14,7 +13,7 @@ Redis 缓存后端的设计，比多后端设计更加简单直观，使用便�
 ## 二、架构设计
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/L9N9bNDUIocNUNxh25KcM7FRn2e](https://gcntfv628ebr.feishu.cn/file/L9N9bNDUIocNUNxh25KcM7FRn2e)
 
-![](./image/image%20(25).png)
+![Redis 缓存后端存储架构](./image/image%20(25).png)
 
 
 
@@ -67,8 +66,7 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/L9N9bNDUIocNUNxh25KcM7F
 
 
 ### 4.2、 核心接口设计
-```typescript
-// types.ts
+```typescript [types.ts]
 export interface CacheBackend {
   get<T>(key: string): Promise<T | null>;
   set<T>(key: string, value: T, ttl?: number): Promise<void>;
@@ -97,8 +95,7 @@ export interface UnifiedStorageOptions {
 ```
 
 ### 4.3、统一存储服务实现
-```typescript
-/ unified-storage.ts
+```typescript [unified-storage.ts]
   export class UnifiedStorage {
     private cache: CacheBackend;
     private persistent: PersistentBackend;
@@ -186,8 +183,7 @@ export interface UnifiedStorageOptions {
 
 
 ### 4.4、工厂模式创建器
-```typescript
-// factory.ts
+```typescript [factory.ts]
   export class StorageFactory {
     static async createUnifiedStorage(config: StorageConfig):
   Promise<UnifiedStorage> {
@@ -248,8 +244,7 @@ export interface UnifiedStorageOptions {
 **核心思路：不直接使用 new 创建对象，而是通过工厂方法来创建对象**
 
 ### 4.5、配置 Schema 设计
-```typescript
-  // config.ts
+```typescript [config.ts]
   export const StorageConfigSchema = z.object({
     cache: z.object({
       type: z.enum(['redis', 'memory']),
@@ -272,7 +267,7 @@ export interface UnifiedStorageOptions {
 + enableReadThrough：读穿模式，启用是从 DB 加载之后自动更新缓存，禁用时只读缓存
 
 ### 4.6、使用示例
-```typescript
+```typescript [example.ts]
 // 使用示例
   const config: StorageConfig = {
     cache: {

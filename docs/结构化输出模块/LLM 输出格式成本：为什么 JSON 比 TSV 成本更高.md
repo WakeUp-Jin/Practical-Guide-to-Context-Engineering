@@ -520,6 +520,7 @@ reason = "兼具海滨属性和温和气候，海鲜美食与较慢生活节奏�
 
 代码验证如下，使用LangChain框架来处理
 
+::: details 点击展开完整代码
 ```javascript
 import { JsonOutputParser } from '@langchain/core/output_parsers';
 
@@ -613,6 +614,7 @@ export async function mainScriptJSON1() {
 }
 
 ```
+:::
 
 ```javascript
 [

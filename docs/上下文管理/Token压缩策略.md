@@ -42,7 +42,6 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/MjkHbXHWjopTSQxpXDccVDU
     - 在不确定时尝试两种策略并选择效果更好的
 
 
-
 ## 二、压缩触发机制
 压缩通过 `checkAndCompress()` 方法触发：
 
@@ -54,8 +53,8 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/MjkHbXHWjopTSQxpXDccVDU
     - 公式：`utilization = currentTokenCount / maxTokens`
     - 用途：监控当前令牌使用情况，提供警告和统计信息
 3. **压缩决策**：
-    - 逻辑：<font style="background-color:rgba(255, 255, 255, 0.1);">currentTokenCount >= maxTokens * compressionThreshold</font>
-    - 默认<font style="background-color:rgba(255, 255, 255, 0.1);">compressionThreshold（</font>阈值）为 0.9（90%）
+    - 逻辑：currentTokenCount >= maxTokens * compressionThreshold
+    - 默认compressionThreshold（阈值）为 0.9（90%）
     - 用途：决定何时开始压缩操作
 
 压缩触发：
@@ -63,11 +62,10 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/MjkHbXHWjopTSQxpXDccVDU
 + **maxToken**：是根据 LLM 提供商和模型动态计算得来的，而不是写死的值。它的确定过程如下：
 + **CurrentToken**：是调用`updateTokenCount()` 获取的，`updateTokenCount()`方法会遍历整个消息数组，从头开始计算所有消息的令牌数：
 + 使用 lastCompressCheck：`lastCompressionCheck` 变量是用于控制压缩检查频率的关键机制。它通过记录上次检查时间，并与配置的检查间隔进行比较，来决定是否需要执行新的压缩检查，简单来说就是：这个方法检查当前时间与上次压缩检查时间的差值是否超过了配置的检查间隔（默认 5 秒）。
-+ 每次执行**更新 Token 总数(updateTokenCount) **的时候，会进行全量重新计算，全量重新计算的原因：
++ 每次执行 **更新 Token 总数(updateTokenCount)** 的时候，会进行全量重新计算，全量重新计算的原因：
     1. **压缩操作**：压缩操作会删除或修改消息，导致令牌数发生变化
     2. **消息优先级调整**：系统可能会根据对话内容动态调整消息优先级
     3. **准确性要求**：确保令牌计数的准确性，避免累积误差
-
 
 
 ## 三、压缩策略的选择
@@ -244,7 +242,6 @@ if (middleEfficiency >= oldestEfficiency) {  // 0.5066 >= 0.4804
 + 系统优先考虑优先级，不会移除高优先级的旧消息
 + 只有当所有低优先级消息（无论新旧）都被移除后，才会考虑移除高优先级消息
 + 这确保了重要的高优先级消息不会被过早删除
-
 
 
 ## 五、 完整流程总结

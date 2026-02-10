@@ -99,6 +99,7 @@ export function createLLMService(
 
 内部方法，根据配置创建具体的 LLM 服务实例。
 
+::: details 点击展开完整代码
 ```typescript
 function _createLLMService(
   config: LLMConfig,
@@ -274,6 +275,7 @@ function _createLLMService(
   }
 }
 ```
+:::
 
 ### 辅助工具函数
 
