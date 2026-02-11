@@ -186,6 +186,10 @@ export default {
             text: "ReasonCode项目设计文档",
             items: [
               {
+                text: "首页：ReasonCode项目介绍",
+                link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
+              },
+              {
                 text: "第一篇：文件搜索工具",
                 link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
               },
