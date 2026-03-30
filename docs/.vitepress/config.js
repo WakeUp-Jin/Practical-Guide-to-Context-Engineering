@@ -110,7 +110,12 @@ export default {
               },
             ],
           },
-          // { text: "第十章 相关上下文模块(待整理)" },
+          {
+            text: "第十章 相关上下文模块",
+            items: [
+              { text: "Harness Engineering理解", link: "/相关上下文模块/Harness Engineering理解" },
+            ],
+          },
           {
             text: "第十一章 LLM模块",
             items: [
