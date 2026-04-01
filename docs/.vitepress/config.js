@@ -49,146 +49,135 @@ export default {
     // nav: [{ text: "指南", link: "/" }],
     sidebar: [
       {
-        text: "前言",
+        text: "开始阅读",
         items: [
-          // { text: '上下文组成' },
-          { text: "1、首页", link: "/" },
-          { text: "2、更新日记", link: "/更新日记/更新日记" },
+          { text: "首页", link: "/" },
+          { text: "更新日记", link: "/更新日记/更新日记" },
           {
-            text: "3、上下文工程 Agent 后端", link: "/前言/从零到一：基于上下文工程的%20Agent%20后端设计",
+            text: "架构总览", link: "/前言/从零到一：基于上下文工程的%20Agent%20后端设计",
           },
         ],
       },
       {
-        text: "第一部分：上下文工程基础技术",
+        text: "基础技术",
         items: [
-          // { text: '第一章 数据持久化(待整理)',  },
-          // { text: "第一章 向量存储和嵌入模型(待整理)" },
-          // { text: "第二章 知识图谱(待整理)" },
-          {
-            text: "4、RAG策略", link: "/RAG技术/RAG策略-index"
-          },
-          { text: "5、搜索代理", link: "/搜索代理/搜索代理" },
+          { text: "RAG 策略", link: "/RAG技术/RAG策略-index" },
+          { text: "搜索代理", link: "/搜索代理/搜索代理" },
         ],
       },
       {
-        text: "第二部分：上下文组成工程实践",
+        text: "工程实践",
         items: [
-          // { text: "第五章 系统提示词模块(待整理)" },
           {
-            text: "第六章 工具管理模块",
+            text: "工具管理",
+            collapsed: false,
             items: [
-              { text: "6、工具管理", link: "/工具管理模块/工具管理" },
+              { text: "工具管理概述", link: "/工具管理模块/工具管理" },
               {
-                text: "7、Kode工具定义和管理", link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
-              },
-              // { text: '模型调用工具能力评估',  },
-              // { text: 'MCP与MCP的安全',  }
-            ],
-          },
-          // { text: "第七章 用户记忆模块(待整理)" },
-          {
-            text: "第八章 会话存储模块",
-            items: [
-              {
-                text: "8、Redis缓存后端存储设计", link: "/会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
-              },
-              {
-                text: "9、多后端存储设计-备份降级", link: "/会话存储模块/多后端存储设计-备份降级策略",
+                text: "Kode 工具定义", link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
               },
             ],
           },
           {
-            text: "第九章 结构化输出模块",
+            text: "会话存储",
+            collapsed: false,
             items: [
               {
-                text: "10、JSON结构化输出的方法", link: "/结构化输出模块/JSON结构化输出的方法",
+                text: "Redis 读写穿透", link: "/会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
               },
               {
-                text: "11、LLM 输出格式成本", link: "/结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
+                text: "多后端备份降级", link: "/会话存储模块/多后端存储设计-备份降级策略",
               },
             ],
           },
           {
-            text: "第十章 相关上下文模块",
+            text: "结构化输出",
+            collapsed: false,
             items: [
-              { text: "12、Harness的理解", link: "/相关上下文模块/Harness Engineering理解" },
+              {
+                text: "JSON 结构化输出", link: "/结构化输出模块/JSON结构化输出的方法",
+              },
+              {
+                text: "输出格式成本", link: "/结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
+              },
             ],
           },
           {
-            text: "第十一章 LLM模块",
+            text: "相关上下文",
+            collapsed: false,
+            items: [
+              { text: "Harness Engineering", link: "/相关上下文模块/Harness Engineering理解" },
+            ],
+          },
+          {
+            text: "LLM 模块",
+            collapsed: false,
             items: [
               {
-                text: "13、LLM服务层的实现设计", link: "/LLM模块/LLM服务层的实现设计",
+                text: "LLM 服务层设计", link: "/LLM模块/LLM服务层的实现设计",
               },
               {
-                text: "14、Cipher的LLM 服务架构", link: "/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本",
+                text: "Cipher 服务架构", link: "/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本",
               },
-              // { text: '三大LLM提供商实现策略细节' }
             ],
           },
         ],
       },
       {
-        text: "第三部分：上下文管理",
+        text: "上下文管理",
         items: [
-          { text: "15、上下文管理", link: "/上下文管理/上下文管理" },
-          { text: "16、Token压缩策略", link: "/上下文管理/Token压缩策略" },
+          { text: "上下文管理策略", link: "/上下文管理/上下文管理" },
+          { text: "Token 压缩策略", link: "/上下文管理/Token压缩策略" },
           {
-            text: "17、上下文压缩工具消息裁剪", link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
+            text: "ClaudeCode 与 Gemini 压缩", link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
           },
         ],
       },
       {
-        text: "第四部分：Agent架构设计",
+        text: "Agent 架构",
         items: [
           {
-            text: "18、协同Agent与自主Agent", link: "/Agent形态/两种世界的交互形态：协同Agent与自主Agent",
+            text: "协同与自主 Agent", link: "/Agent形态/两种世界的交互形态：协同Agent与自主Agent",
           },
           {
-            text: "19、单智能体和多智能体", link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
+            text: "单智能体与多智能体", link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
           },
         ],
       },
       {
-        text: "第五部分：Agent评估",
+        text: "Agent 评估",
         items: [
-          { text: "20、Agent的评估", link: "/Agent评估/Agent的评估" },
+          { text: "Agent的评估", link: "/Agent评估/Agent的评估" },
           {
-            text: "21、实现Agent的评估器-TS版本", link: "/Agent评估/实现Agent的评估器-TS版本",
+            text: "评估器实现 (TS)", link: "/Agent评估/实现Agent的评估器-TS版本",
           },
           {
-            text: "22、评估多种类型Agent的方法", link: "/Agent评估/评估多种类型Agent的方法",
-          },
-        ],
-      },
-      {
-        text: "第六部分：AI协作编码",
-        items: [
-          {
-            text: "23、ClaudeCode 配置全解", link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
+            text: "Agent评估方法", link: "/Agent评估/评估多种类型Agent的方法",
           },
         ],
       },
       {
-        text: "第七部分：上下文工程实践项目",
+        text: "AI 协作编码",
         items: [
           {
-            text: "ReasonCode项目设计文档",
-            items: [
-              {
-                text: "首页：ReasonCode项目介绍", link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
-              },
-              {
-                text: "第一篇：文件搜索工具", link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
-              },
-              {
-                text: "第二篇：工具权限模块的开发", link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
-              },
-              {
-                text: "第三篇：上下文压缩机制设计", link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
-              }
-            ],
+            text: "Claude Code 配置全解", link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
+          },
+        ],
+      },
+      {
+        text: "实践项目",
+        items: [
+          {
+            text: "ReasonCode 项目介绍", link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
+          },
+          {
+            text: "文件搜索工具", link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
+          },
+          {
+            text: "工具权限模块", link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
+          },
+          {
+            text: "上下文压缩机制", link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
           },
         ],
       },
