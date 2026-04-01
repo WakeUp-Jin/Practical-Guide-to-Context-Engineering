@@ -105,7 +105,7 @@ Excalidraw文件：https://my.feishu.cn/file/NQLnb4TcXoXDxAxh5AMcSrcQnue
 
 接下来我也会仔细去阅读那两篇工程实践的文章，梳理出来一个我的理解
 
-# 四、从“Reasoning”到“Agentic”的理解
+## 四、从“Reasoning”到“Agentic”的理解
 
 林俊旸在X上面发布了一篇文章，我觉得很有意思，是我第一次感受到在模型训练阶段中，也需要从传统的方式转变，我之前一直是从大模型应用的角度去思考这个问题
 

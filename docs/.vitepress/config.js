@@ -1,6 +1,9 @@
 export default {
   // site-level options
   base: "/Practical-Guide-to-Context-Engineering/",
+  rewrites: {
+    "guide/index.md": "index.md",
+  },
   markdown: {
     config: (md) => {
       // 自定义插件：让单独的代码块也能通过 [filename] 语法显示文件名标签
@@ -43,15 +46,16 @@ export default {
 
   themeConfig: {
     // theme-level options
-    nav: [{ text: "指南", link: "/guide/" }],
+    // nav: [{ text: "指南", link: "/" }],
     sidebar: [
       {
         text: "前言",
         items: [
           // { text: '上下文组成' },
+          { text: "首页", link: "/" },
           { text: "更新日记", link: "/更新日记/更新日记" },
           {
-            text: "从零到一：基于上下文工程的 Agent 后端设计",link: "/前言/从零到一：基于上下文工程的%20Agent%20后端设计",
+            text: "从零到一：基于上下文工程的 Agent 后端设计", link: "/前言/从零到一：基于上下文工程的%20Agent%20后端设计",
           },
         ],
       },
@@ -62,9 +66,9 @@ export default {
           // { text: "第一章 向量存储和嵌入模型(待整理)" },
           // { text: "第二章 知识图谱(待整理)" },
           {
-            text: "第一章 RAG策略",link: "/RAG技术/RAG策略-index"
+            text: "RAG策略", link: "/RAG技术/RAG策略-index"
           },
-          { text: "第二章 搜索代理", link: "/搜索代理/搜索代理" },
+          { text: "搜索代理", link: "/搜索代理/搜索代理" },
         ],
       },
       {
@@ -76,8 +80,7 @@ export default {
             items: [
               { text: "工具管理", link: "/工具管理模块/工具管理" },
               {
-                text: "ClaudeCode逆向工程（Kode）的工具定义和管理",
-                link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
+                text: "ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本", link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
               },
               // { text: '模型调用工具能力评估',  },
               // { text: 'MCP与MCP的安全',  }
@@ -88,12 +91,10 @@ export default {
             text: "第八章 会话存储模块",
             items: [
               {
-                text: "Redis缓存后端存储设计-读穿｜写穿",
-                link: "/会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
+                text: "Redis缓存后端存储设计-读穿｜写穿", link: "/会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
               },
               {
-                text: "多后端存储设计-备份降级策略",
-                link: "/会话存储模块/多后端存储设计-备份降级策略",
+                text: "多后端存储设计-备份降级策略", link: "/会话存储模块/多后端存储设计-备份降级策略",
               },
             ],
           },
@@ -101,12 +102,10 @@ export default {
             text: "第九章 结构化输出模块",
             items: [
               {
-                text: "JSON结构化输出的方法",
-                link: "/结构化输出模块/JSON结构化输出的方法",
+                text: "JSON结构化输出的方法", link: "/结构化输出模块/JSON结构化输出的方法",
               },
               {
-                text: "LLM输出格式成本：为什么JSON比TSV成本更高",
-                link: "/结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
+                text: "LLM 输出格式成本：为什么 JSON 比 TSV 成本更高", link: "/结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
               },
             ],
           },
@@ -120,12 +119,10 @@ export default {
             text: "第十一章 LLM模块",
             items: [
               {
-                text: "LLM服务层的实现设计",
-                link: "/LLM模块/LLM服务层的实现设计",
+                text: "LLM服务层的实现设计", link: "/LLM模块/LLM服务层的实现设计",
               },
               {
-                text: "Cipher的LLM 服务架构分析文档",
-                link: "/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本",
+                text: "Cipher的LLM 服务架构分析文档 -TS版本", link: "/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本",
               },
               // { text: '三大LLM提供商实现策略细节' }
             ],
@@ -135,11 +132,10 @@ export default {
       {
         text: "第三部分：上下文管理",
         items: [
-          { text: "第十二章 上下文管理", link: "/上下文管理/上下文管理" },
-          { text: "第十三章 Token压缩策略", link: "/上下文管理/Token压缩策略" },
+          { text: "上下文管理", link: "/上下文管理/上下文管理" },
+          { text: "Token压缩策略", link: "/上下文管理/Token压缩策略" },
           {
-            text: "第十四章 上下文压缩：ClaudeCode、Gemini 与工具消息裁剪",
-            link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
+            text: "上下文压缩：ClaudeCode、Gemini与工具消息裁剪", link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
           },
         ],
       },
@@ -147,26 +143,22 @@ export default {
         text: "第四部分：Agent架构设计",
         items: [
           {
-            text: "第十五章 两种世界的交互形态：协同Agent与自主Agent",
-            link: "/Agent形态/两种世界的交互形态：协同Agent与自主Agent",
+            text: "两种世界的交互形态：协同Agent与自主Agent", link: "/Agent形态/两种世界的交互形态：协同Agent与自主Agent",
           },
           {
-            text: "第十六章 智能体系统构建策略：单智能体和多智能体",
-            link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
+            text: "智能体系统构建策略-单智能体和多智能体", link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
           },
         ],
       },
       {
         text: "第五部分：Agent评估",
         items: [
-          { text: "第十七章 Agent的评估", link: "/Agent评估/Agent的评估" },
+          { text: "Agent的评估", link: "/Agent评估/Agent的评估" },
           {
-            text: "第十八章 实现Agent的评估器-TS版本",
-            link: "/Agent评估/实现Agent的评估器-TS版本",
+            text: "实现Agent的评估器-TS版本", link: "/Agent评估/实现Agent的评估器-TS版本",
           },
           {
-            text: "第十九章 揭秘 AI 代理的评估 - 多种Agent的评估方法",
-            link: "/Agent评估/评估多种类型Agent的方法",
+            text: "评估多种类型Agent的方法", link: "/Agent评估/评估多种类型Agent的方法",
           },
         ],
       },
@@ -174,8 +166,7 @@ export default {
         text: "第六部分：AI协作编码与上下文工程",
         items: [
           {
-            text: "第二十章 Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
-            link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
+            text: "Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充", link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
           },
         ],
       },
@@ -186,20 +177,16 @@ export default {
             text: "ReasonCode项目设计文档",
             items: [
               {
-                text: "首页：ReasonCode项目介绍",
-                link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
+                text: "首页：ReasonCode项目介绍", link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
               },
               {
-                text: "第一篇：文件搜索工具",
-                link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
+                text: "第一篇：文件搜索工具", link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
               },
               {
-                text: "第二篇：Reason-cli 工具权限模块的开发",
-                link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
+                text: "第二篇：Reason-cli 工具权限模块的开发", link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
               },
               {
-                text: "第三篇：Reason-cli的上下文压缩机制的设计",
-                link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
+                text: "第三篇：Reason-cli的上下文压缩机制的设计", link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
               }
             ],
           },
@@ -214,7 +201,7 @@ export default {
     },
 
     //右侧的大纲
-    outline: { level: [1, 2, 3], label: "本章目录" },
+    outline: { level: [1, 2, 3,], label: "本章目录" },
     // 搜索（v1 内置本地搜索足够好；若要 Algolia，配置 algolia 字段）
     search: { provider: "local" },
 

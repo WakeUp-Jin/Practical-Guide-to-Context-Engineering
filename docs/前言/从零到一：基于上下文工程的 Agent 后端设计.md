@@ -1,4 +1,5 @@
-# 前言
+# 从零到一：基于上下文工程的 Agent 后端设计
+## 一、前言
 从之前我整理的上下文工程实践指南出发，我大概梳理出来，在一个 Agent 中最核心的模块我分为四类：
 
 1. **工具模块和管理**：定义一些 Agent 的工具，可以是 MCP，也可以是 Skill，除了定义之后，我们还需要管理：工具的输出裁剪，工具的执行审核流程等
@@ -30,7 +31,7 @@ npm create context-template
 
 
 
-# 一、总设计
+## 一、总设计
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/YAS4b3tgIoapG4xQlRecBv09nLb](https://gcntfv628ebr.feishu.cn/file/YAS4b3tgIoapG4xQlRecBv09nLb)
 
 <!-- 这是一张图片，ocr 内容为：工具定义和输出 会话历史记录 系统提示词 结构化输出 用户输入 用户记忆 相关上下文-块文档 上下文管理函数 上下文管理 工具定义 工具参数设计 工具 管理 AGENT形态(执行器) 工具模块和管理 工具执行-控制流 函数 工具类型 LLM模块 LLM工厂函数-创建具体的LLM实例 OPENAI DEEPSEEK CLAUDE -->
@@ -42,7 +43,7 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/YAS4b3tgIoapG4xQlRecBv0
 2. 工具模块和管理：工具是 LLM 关键的外部能力，是结合到上下文来让 LLM 使用的
 3. 上下文管理：这个是统一的上下文，其负责编排好上下文，在 执行器中将上下文输入给 LLM，以 LLM 的输出来解决问题
 
-# 二、LLM 模块
+## 二、LLM 模块
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/B5SobRCKIo865wxZoAEcz8PAnGb](https://gcntfv628ebr.feishu.cn/file/B5SobRCKIo865wxZoAEcz8PAnGb)
 
 
@@ -102,7 +103,7 @@ const response=await service.complete(message,tools)
 - [LLM模块-Cipher的LLM 服务架构分析文档 -TS版本](../LLM模块/Cipher的LLM%20服务架构分析文档%20-TS版本.md)
 
 
-# 三、工具模块和管理
+## 三、工具模块和管理
 ![tool-module](./image/image%20(63).png)
 
 工具模块主要的三个点就是：
@@ -200,7 +201,7 @@ const answer = await llm.generate(
 - [工具模块-工具管理](../工具管理模块/工具管理.md)
 - [工具模块-ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本](../工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理%20-TS版本.md)
 
-# 四、上下文管理
+## 四、上下文管理
 Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/KbH8bMIgbo9TzNxn9zdc7FeMnce](https://gcntfv628ebr.feishu.cn/file/KbH8bMIgbo9TzNxn9zdc7FeMnce)
 
 ![context-module](./image/image%20(61).png)
@@ -239,7 +240,7 @@ Excalidraw 文件：[https://gcntfv628ebr.feishu.cn/file/KbH8bMIgbo9TzNxn9zdc7Fe
 - [上下文管理模块-上下文压缩：ClaudeCode、Gemini与工具消息裁剪](../上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪.md)
 
 
-# 五、执行器
+## 五、执行器
 关于执行器的详细文档在上下文工程实践指南中：
 - [Agent形态-智能体系统构建策略-单智能体和多智能体](../Agent形态/智能体系统构建策略-单智能体和多智能体.md)
 - [Agent形态-两种世界的交互形态：协同Agent与自主Agent](../Agent形态/两种世界的交互形态：协同Agent与自主Agent.md)
