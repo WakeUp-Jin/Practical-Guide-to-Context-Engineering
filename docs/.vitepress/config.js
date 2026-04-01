@@ -73,6 +73,7 @@ export default {
             collapsed: false,
             items: [
               { text: "工具管理概述", link: "/工具管理模块/工具管理" },
+              { text: "工具调度与权限模块的开发", link: "/工具管理模块/工具调度与权限模块的开发" },
               {
                 text: "Kode 工具定义", link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
               },
@@ -170,15 +171,15 @@ export default {
           {
             text: "ReasonCode 项目介绍", link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
           },
-          {
-            text: "文件搜索工具", link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
-          },
-          {
-            text: "工具权限模块", link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
-          },
-          {
-            text: "上下文压缩机制", link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
-          },
+          // {
+          //   text: "文件搜索工具", link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
+          // },
+          // {
+          //   text: "工具权限模块", link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
+          // },
+          // {
+          //   text: "上下文压缩机制", link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
+          // },
         ],
       },
     ],

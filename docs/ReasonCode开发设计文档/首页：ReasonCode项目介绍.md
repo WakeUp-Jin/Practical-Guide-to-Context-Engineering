@@ -39,7 +39,7 @@ Excalidraw 文件链接：[https://my.feishu.cn/file/J2X8bq9KooFgbcxzN4WcdTArnud
 上图是完整的 Reason Code 的核心设计，关于里面的核心设计细节，可以访问下面的文档列表
 
 - [第一篇：文件搜索工具](./第一篇：文件搜索工具.md) - 文件搜索工具
-- [第二篇：Reason-cli 工具权限模块的开发](./第二篇：Reason-cli%20工具权限模块的开发.md) - Reason-cli 工具权限模块的开发
+- [第二篇：Reason-cli 工具权限模块的开发](../工具管理模块/工具调度与权限模块的开发.md) - Reason-cli 工具权限模块的开发
 - [第三篇：Reason-cli的上下文压缩机制的设计](./第三篇：Reason-cli的上下文压缩机制的设计.md) - Reason-cli的上下文压缩机制的设计
 
 ## 技术亮点
