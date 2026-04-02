@@ -74,6 +74,7 @@ export default {
             items: [
               { text: "工具管理概述", link: "/工具管理模块/工具管理" },
               { text: "工具调度与权限模块的开发", link: "/工具管理模块/工具调度与权限模块的开发" },
+              { text: "为你的Agent集成Skill系统", link: "/工具管理模块/为你的Agent集成Skill系统" },
               {
                 text: "Kode 工具定义", link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
               },
