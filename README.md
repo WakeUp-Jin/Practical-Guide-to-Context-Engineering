@@ -71,7 +71,10 @@ Harness Engineering我的理解是：**为Agent搭建运行空间，设计它的
 
 Harness Engineering中有些模块是直接服务于上下文（RAG、记忆、系统提示词等），有些是间接服务上下文(上下文管理，Agent评估等)，有些则是直接服务于Agent稳定运行的
 但无论在哪一层，它们都在Harness Engineering这个大框架下
-![上下文工程和Harness Engineering的关系](./docs/image/两者的关系1.png)
+<!-- ![上下文工程和Harness Engineering的关系](./docs/image/两者的关系1.png) -->
+<p align="center">
+  <img src="./docs/image/两者的关系1.png" alt="上下文工程和Harness Engineering的关系" width="70%">
+</p>
 > 越靠近中心，越直接操作上下文。越靠近外层，越偏向基础设施
 
 :palm_tree: **2、从技术发展来看：这条演进路径有一条清晰的主线： 上下文 -> 上下文工程 -> Harness Engineering**
