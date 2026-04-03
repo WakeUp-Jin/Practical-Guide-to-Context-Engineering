@@ -49,46 +49,63 @@ export default {
     // nav: [{ text: "指南", link: "/" }],
     sidebar: [
       {
-        text: "开始阅读",
+        text: "全局认知",
         items: [
           { text: "首页", link: "/" },
-          { text: "更新日记", link: "/更新日记/更新日记" },
+          { text: "上下文工程", link: "/概述/上下文工程" },
+          { text: "Harness Engineering", link: "/概述/Harness%20Engineering" },
           {
-            text: "架构总览", link: "/前言/从零到一：基于上下文工程的%20Agent%20后端设计",
+            text: "基于上下文工程的 Agent 后端设计",
+            link: "/前言/从零到一：基于上下文工程的%20Agent%20后端设计",
           },
         ],
       },
       {
-        text: "基础技术",
+        text: "大模型应用开发基础技术",
         items: [
           { text: "RAG 策略", link: "/RAG技术/RAG策略-index" },
           { text: "搜索代理", link: "/搜索代理/搜索代理" },
         ],
       },
       {
-        text: "工程实践",
+        text: "上下文核心模块",
         items: [
+          {
+            text: "系统提示词 [待补充]",
+          },
           {
             text: "工具管理",
             collapsed: false,
             items: [
               { text: "工具管理概述", link: "/工具管理模块/工具管理" },
-              { text: "工具调度与权限模块的开发", link: "/工具管理模块/工具调度与权限模块的开发" },
-              { text: "为你的Agent集成Skill系统", link: "/工具管理模块/为你的Agent集成Skill系统" },
               {
-                text: "Kode 工具定义", link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
+                text: "工具调度与权限模块的开发",
+                link: "/工具管理模块/工具调度与权限模块的开发",
+              },
+              {
+                text: "为你的Agent集成Skill系统",
+                link: "/工具管理模块/为你的Agent集成Skill系统",
+              },
+              {
+                text: "Kode 工具定义",
+                link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
               },
             ],
+          },
+          {
+            text: "用户记忆 [待补充]",
           },
           {
             text: "会话存储",
             collapsed: false,
             items: [
               {
-                text: "Redis 读写穿透", link: "/会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
+                text: "Redis 读写穿透",
+                link: "/会话存储模块/Redis缓存后端存储设计-读穿｜写穿",
               },
               {
-                text: "多后端备份降级", link: "/会话存储模块/多后端存储设计-备份降级策略",
+                text: "多后端备份降级",
+                link: "/会话存储模块/多后端存储设计-备份降级策略",
               },
             ],
           },
@@ -97,18 +114,13 @@ export default {
             collapsed: false,
             items: [
               {
-                text: "JSON 结构化输出", link: "/结构化输出模块/JSON结构化输出的方法",
+                text: "JSON 结构化输出",
+                link: "/结构化输出模块/JSON结构化输出的方法",
               },
               {
-                text: "输出格式成本", link: "/结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
+                text: "输出格式成本",
+                link: "/结构化输出模块/LLM 输出格式成本：为什么 JSON 比 TSV 成本更高",
               },
-            ],
-          },
-          {
-            text: "相关上下文",
-            collapsed: false,
-            items: [
-              { text: "Harness Engineering", link: "/相关上下文模块/Harness Engineering理解" },
             ],
           },
           {
@@ -116,71 +128,79 @@ export default {
             collapsed: false,
             items: [
               {
-                text: "LLM 服务层设计", link: "/LLM模块/LLM服务层的实现设计",
+                text: "LLM 服务层设计",
+                link: "/LLM模块/LLM服务层的实现设计",
               },
               {
-                text: "Cipher 服务架构", link: "/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本",
+                text: "Cipher 服务架构",
+                link: "/LLM模块/Cipher的LLM 服务架构分析文档 -TS版本",
               },
             ],
           },
         ],
       },
       {
-        text: "上下文管理",
+        text: "上下文管理：跨模块的全局策略",
         items: [
           { text: "上下文管理策略", link: "/上下文管理/上下文管理" },
           { text: "Token 压缩策略", link: "/上下文管理/Token压缩策略" },
           {
-            text: "ClaudeCode 与 Gemini 压缩", link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
+            text: "ClaudeCode 与 Gemini 压缩",
+            link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
           },
         ],
       },
       {
-        text: "Agent 架构",
+        text: "Agent 运行空间",
         items: [
           {
-            text: "协同与自主 Agent", link: "/Agent形态/两种世界的交互形态：协同Agent与自主Agent",
+            text: "Agent 形态",
+            collapsed: false,
+            items: [
+              {
+                text: "协同与自主 Agent",
+                link: "/Agent形态/两种世界的交互形态：协同Agent与自主Agent",
+              },
+              {
+                text: "单智能体与多智能体",
+                link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
+              },
+            ],
           },
           {
-            text: "单智能体与多智能体", link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
+            text: "Agent 评估",
+            collapsed: false,
+            items: [
+              { text: "Agent 的评估", link: "/Agent评估/Agent的评估" },
+              {
+                text: "评估器实现 (TS)",
+                link: "/Agent评估/实现Agent的评估器-TS版本",
+              },
+              {
+                text: "多种 Agent 评估方法",
+                link: "/Agent评估/评估多种类型Agent的方法",
+              },
+            ],
           },
         ],
       },
       {
-        text: "Agent 评估",
+        text: "实践与案例",
         items: [
-          { text: "Agent的评估", link: "/Agent评估/Agent的评估" },
           {
-            text: "评估器实现 (TS)", link: "/Agent评估/实现Agent的评估器-TS版本",
+            text: "ReasonCode 项目介绍",
+            link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
           },
           {
-            text: "Agent评估方法", link: "/Agent评估/评估多种类型Agent的方法",
+            text: "Claude Code 配置全解",
+            link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
           },
         ],
       },
       {
-        text: "AI 协作编码",
+        text: "附录",
         items: [
-          {
-            text: "Claude Code 配置全解", link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
-          },
-        ],
-      },
-      {
-        text: "实践项目",
-        items: [
-          {
-            text: "ReasonCode 项目介绍", link: "/ReasonCode开发设计文档/首页：ReasonCode项目介绍",
-          },
-          // {
-          //   text: "文件搜索工具", link: "/ReasonCode开发设计文档/第一篇：文件搜索工具",
-          // },
-          // {
-          //   text: "工具权限模块", link: "/ReasonCode开发设计文档/第二篇：Reason-cli 工具权限模块的开发",
-          // },
-          // {
-          //   text: "上下文压缩机制", link: "/ReasonCode开发设计文档/第三篇：Reason-cli的上下文压缩机制的设计",
-          // },
+          { text: "更新日记", link: "/更新日记/更新日记" },
         ],
       },
     ],
