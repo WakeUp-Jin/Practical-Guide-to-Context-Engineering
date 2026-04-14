@@ -182,6 +182,10 @@ export default {
               },
             ],
           },
+          {
+            text: "定时任务与KAIROS模式",
+            link: "/Agent运行空间/让Agent从被动变为主动：定时任务和KAIROS模式",
+          },
         ],
       },
       {
