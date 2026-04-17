@@ -65,6 +65,7 @@ export default {
         items: [
           { text: "RAG 策略", link: "/RAG技术/RAG策略-index" },
           { text: "搜索代理", link: "/搜索代理/搜索代理" },
+          {text: "为你的Agent集成Skill系统",link: "/工具管理模块/为你的Agent集成Skill系统"},
         ],
       },
       {
@@ -82,10 +83,7 @@ export default {
                 text: "工具调度与权限模块的开发",
                 link: "/工具管理模块/工具调度与权限模块的开发",
               },
-              {
-                text: "为你的Agent集成Skill系统",
-                link: "/工具管理模块/为你的Agent集成Skill系统",
-              },
+              {text: "Bash工具实现和安全权限设计",link: "/工具管理模块/Bash工具实现和安全权限设计细节"},
               {
                 text: "Kode 工具定义",
                 link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
