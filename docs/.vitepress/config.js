@@ -84,6 +84,7 @@ export default {
                 link: "/工具管理模块/工具调度与权限模块的开发",
               },
               {text: "Bash工具实现和安全权限设计",link: "/工具管理模块/Bash工具实现和安全权限设计细节"},
+              {text: "Grep和Glob工具详细设计",link: "/工具管理模块/Agent文件系统检索核心：Grep和Glob工具"},
               {
                 text: "Kode 工具定义",
                 link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
@@ -141,11 +142,9 @@ export default {
         text: "上下文管理：跨模块的全局策略",
         items: [
           { text: "上下文管理策略", link: "/上下文管理/上下文管理" },
+          { text: "上下文压缩调度的设计", link: "/上下文管理/上下文压缩调度：工具裁剪与历史记录压缩" },
+          {text: "上下文压缩指令的设计",link: "/上下文管理/上下文压缩指令：ClaudeCode与Gemini的压缩提示词解析",},
           { text: "Token 压缩策略", link: "/上下文管理/Token压缩策略" },
-          {
-            text: "ClaudeCode 与 Gemini 压缩",
-            link: "/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪",
-          },
         ],
       },
       {

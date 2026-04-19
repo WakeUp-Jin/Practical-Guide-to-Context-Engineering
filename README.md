@@ -91,53 +91,55 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
 ## 📖 内容导航
 
 ### 一、全局认知
-- [上下文工程](./docs/概述/上下文工程.md)：上下文工程的定义、与 RAG 的区别、与提示词工程的区别、Karpathy 的总结 ✅
-- [Harness Engineering](./docs/概述/Harness%20Engineering.md)：Harness Engineering 的定义、与上下文工程的关系 ✅
-- [基于上下文工程的 Agent 后端设计](./docs/前言/从零到一：基于上下文工程的%20Agent%20后端设计.md)：从零到一的 Agent 后端设计总览 ✅
+- [上下文工程](./docs/概述/上下文工程.md)：上下文工程的定义、与 RAG 的区别、与提示词工程的区别、Karpathy 的总结 
+- [Harness Engineering](./docs/概述/Harness%20Engineering.md)：Harness Engineering 的定义、与上下文工程的关系 
+- [基于上下文工程的 Agent 后端设计](./docs/前言/从零到一：基于上下文工程的%20Agent%20后端设计.md)：从零到一的 Agent 后端设计总览 
 
 ### 二、大模型应用开发基础技术
-- [RAG 策略](./docs/RAG技术/RAG策略-index.md)：从检索增强生成的流程拆解到优化方法，涵盖索引构建、检索策略、融合方式 ✅
-- [搜索代理](./docs/搜索代理/搜索代理.md)：搜索代理的原理、实现方式、优化方法 ✅
-- [为你的Agent集成Skill系统](./docs/工具管理模块/为你的Agent集成Skill系统.md) ✅
+- [RAG 策略](./docs/RAG技术/RAG策略-index.md)：从检索增强生成的流程拆解到优化方法，涵盖索引构建、检索策略、融合方式 
+- [搜索代理](./docs/搜索代理/搜索代理.md)：搜索代理的原理、实现方式、优化方法 
+- [为你的Agent集成Skill系统](./docs/工具管理模块/为你的Agent集成Skill系统.md) 
 
 ### 三、上下文核心模块
 > 围绕七种上下文类型，每种上下文衍生出对应的工程模块，这是本项目的主体部分
 
 - **系统提示词** *(待补充)*
 - **工具管理**
-  - [工具管理概述](./docs/工具管理模块/工具管理.md) ✅
-  - [工具调度与权限模块的开发](./docs/工具管理模块/工具调度与权限模块的开发.md) ✅
-  - [Bash工具实现和安全权限设计细节](./docs/工具管理模块/Bash工具实现和安全权限设计细节.md)✅
-  - [ClaudeCode逆向工程（Kode）的工具定义和管理](./docs/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理%20-TS版本.md) ✅
+  - [工具管理概述](./docs/工具管理模块/工具管理.md) 
+  - [工具调度与权限模块的开发](./docs/工具管理模块/工具调度与权限模块的开发.md) 
+  - [Bash工具实现和安全权限设计细节](./docs/工具管理模块/Bash工具实现和安全权限设计细节.md)
+  - [Agent文件检索核心：Grep和Glob工具的详细设计](./docs/工具管理模块/Agent文件系统检索核心：Grep和Glob工具.md)
+  - [ClaudeCode逆向工程（Kode）的工具定义和管理](./docs/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理%20-TS版本.md) 
 - **用户记忆** *(待补充)*
 - **会话存储**
-  - [Redis缓存后端存储设计-读穿｜写穿](./docs/会话存储模块/Redis缓存后端存储设计-读穿｜写穿.md) ✅
-  - [多后端存储设计-备份降级策略](./docs/会话存储模块/多后端存储设计-备份降级策略.md) ✅
+  - [Redis缓存后端存储设计-读穿｜写穿](./docs/会话存储模块/Redis缓存后端存储设计-读穿｜写穿.md) 
+  - [多后端存储设计-备份降级策略](./docs/会话存储模块/多后端存储设计-备份降级策略.md) 
 - **结构化输出**
-  - [JSON结构化输出的方法](./docs/结构化输出模块/JSON结构化输出的方法.md) ✅
-  - [LLM输出格式成本：为什么JSON比TSV成本更高](./docs/结构化输出模块/LLM%20输出格式成本：为什么%20JSON%20比%20TSV%20成本更高.md) ✅
+  - [JSON结构化输出的方法](./docs/结构化输出模块/JSON结构化输出的方法.md) 
+  - [LLM输出格式成本：为什么JSON比TSV成本更高](./docs/结构化输出模块/LLM%20输出格式成本：为什么%20JSON%20比%20TSV%20成本更高.md) 
 - **LLM 模块**
-  - [LLM服务层的实现设计](./docs/LLM模块/LLM服务层的实现设计.md) ✅
-  - [Cipher的LLM 服务架构分析文档](./docs/LLM模块/Cipher的LLM%20服务架构分析文档%20-TS版本.md) ✅
+  - [LLM服务层的实现设计](./docs/LLM模块/LLM服务层的实现设计.md) 
+  - [Cipher的LLM 服务架构分析文档](./docs/LLM模块/Cipher的LLM%20服务架构分析文档%20-TS版本.md) 
 
 ### 四、上下文管理：跨模块的全局策略
-- [上下文管理策略](./docs/上下文管理/上下文管理.md)：上下文裁剪、压缩、去重、隔离等策略 ✅
-- [Token 压缩策略](./docs/上下文管理/Token压缩策略.md)：各类压缩方法对比：摘要、向量聚合、句子窗口检索 ✅
-- [上下文压缩：ClaudeCode、Gemini 与工具消息裁剪](./docs/上下文管理/上下文压缩：ClaudeCode、Gemini与工具消息裁剪.md)：上下文压缩的原理、实现方式、优化方法 ✅
+- [上下文管理策略](./docs/上下文管理/上下文管理.md)：上下文裁剪、压缩、去重、隔离等策略 
+- [上下文压缩调度：工具裁剪与历史记录压缩](./docs/上下文管理/上下文压缩调度：工具裁剪与历史记录压缩.md)
+- [上下文压缩指令：ClaudeCode与Gemini的压缩指令解析](./docs/上下文管理/上下文压缩指令：ClaudeCode与Gemini的压缩提示词解析.md)：上下文压缩的原理、实现方式、优化方法 
+- [Token 压缩策略](./docs/上下文管理/Token压缩策略.md)：各类压缩方法对比：摘要、向量聚合、句子窗口检索 
 
 ### 五、Agent 运行空间
 - **Agent 形态**
-  - [两种世界的交互形态：协同Agent与自主Agent](./docs/Agent形态/两种世界的交互形态：协同Agent与自主Agent.md) ✅
-  - [智能体系统构建策略：单智能体和多智能体](./docs/Agent形态/智能体系统构建策略-单智能体和多智能体.md) ✅
+  - [两种世界的交互形态：协同Agent与自主Agent](./docs/Agent形态/两种世界的交互形态：协同Agent与自主Agent.md) 
+  - [智能体系统构建策略：单智能体和多智能体](./docs/Agent形态/智能体系统构建策略-单智能体和多智能体.md) 
 - **Agent 评估**
-  - [Agent的评估](./docs/Agent评估/Agent的评估.md)：Agent 的评估方案和方法 ✅
-  - [实现Agent的评估器-TS版本](./docs/Agent评估/实现Agent的评估器-TS版本.md)：Agent 评估器 TS 版本实现 ✅
-  - [揭秘 AI 代理的评估 - 多种Agent的评估方法](./docs/Agent评估/评估多种类型Agent的方法.md) ✅
-- [定时任务与KAIROS模式](./docs/Agent运行空间/让Agent从被动变为主动：定时任务和KAIROS模式.md)：让Agent从被动变为主动 ✅
+  - [Agent的评估](./docs/Agent评估/Agent的评估.md)：Agent 的评估方案和方法 
+  - [实现Agent的评估器-TS版本](./docs/Agent评估/实现Agent的评估器-TS版本.md)：Agent 评估器 TS 版本实现 
+  - [揭秘 AI 代理的评估 - 多种Agent的评估方法](./docs/Agent评估/评估多种类型Agent的方法.md) 
+- [定时任务与KAIROS模式](./docs/Agent运行空间/让Agent从被动变为主动：定时任务和KAIROS模式.md)：让Agent从被动变为主动 
 
 ### 六、实践与案例
-- [ReasonCode 项目介绍](./docs/ReasonCode开发设计文档/首页：ReasonCode项目介绍.md) ✅
-- [AI协作编码 - Anthropic 黑客马拉松冠军 - ClaudeCode配置整理和补充](./docs/AI协作编码与上下文工程/Anthropic%20黑客马拉松冠军-%20ClaudeCode配置整理和补充.md) ✅
+- [ReasonCode 项目介绍](./docs/ReasonCode开发设计文档/首页：ReasonCode项目介绍.md) 
+- [AI协作编码 - Anthropic 黑客马拉松冠军 - ClaudeCode配置整理和补充](./docs/AI协作编码与上下文工程/Anthropic%20黑客马拉松冠军-%20ClaudeCode配置整理和补充.md) 
 
 ### 附录
 - [更新日记](./docs/更新日记/更新日记.md)：记录项目更新的内容进度
