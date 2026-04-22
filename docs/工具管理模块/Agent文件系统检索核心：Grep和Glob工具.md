@@ -9,8 +9,8 @@ Excalidraw 文件链接：[https://my.feishu.cn/file/Wkhfbmlhqor0aHxivtfc52IunNh
 
 实现 glob 工具有两种方式，这两种方式“各有各的”好处
 
-+ **glob 依赖包：**返回的是完整的文件的信息(存在文件元信息等，例如文件大小，文件修改时间)，所以不需要额外的操作，并且 glob 依赖包是天然的 Node 环境的包
-+ **ripgrep 命令：**返回的是文件路径，没有任何文件元信息，所以需要在操作读取文件信息的操作，`stat`方法，但是 ripgrep 检索的速度是比 glob 快的，但是 ripgrep 是 Rust 实现的，所以运行时需要加载一个二进制文件
++ **glob 依赖包**：返回的是完整的文件的信息(存在文件元信息等，例如文件大小，文件修改时间)，所以不需要额外的操作，并且 glob 依赖包是天然的 Node 环境的包
++ **ripgrep 命令**：返回的是文件路径，没有任何文件元信息，所以需要在操作读取文件信息的操作，`stat`方法，但是 ripgrep 检索的速度是比 glob 快的，但是 ripgrep 是 Rust 实现的，所以运行时需要加载一个二进制文件
 
 
 
@@ -42,8 +42,6 @@ Excalidraw 文件链接：[https://my.feishu.cn/file/IMGxbbcAXonPLDxsbcdcjQuZnfb
 4. js 实现的 grep 命令：是纯 JS 实现的，是一个保底方案，用 glob 获取文件列表，逐个读取文件内容，逐行正则匹配，速度最慢
 
 
-
-执行结果的目录：TODO
 
 ## 三、Ripgrep 自动下载机制
 Excalidraw 文件链接：[https://my.feishu.cn/file/ZAqfbP8MHo6pP9xMUDicMwNwnyD](https://my.feishu.cn/file/ZAqfbP8MHo6pP9xMUDicMwNwnyD)

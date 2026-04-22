@@ -140,6 +140,7 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
 ### 六、实践与案例
 - [ReasonCode 项目介绍](./docs/ReasonCode开发设计文档/首页：ReasonCode项目介绍.md) 
 - [AI协作编码 - Anthropic 黑客马拉松冠军 - ClaudeCode配置整理和补充](./docs/AI协作编码与上下文工程/Anthropic%20黑客马拉松冠军-%20ClaudeCode配置整理和补充.md) 
+- [编程Agent的工程实践：来自OpenAI与Anthropic的实战经验](./docs/AI协作编码与上下文工程/编程Agent的工程实践：来自OpenAI与Anthropic的实战经验.md)
 
 ### 附录
 - [更新日记](./docs/更新日记/更新日记.md)：记录项目更新的内容进度

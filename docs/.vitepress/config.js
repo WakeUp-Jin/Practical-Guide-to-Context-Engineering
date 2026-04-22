@@ -196,6 +196,10 @@ export default {
             text: "Claude Code 配置全解",
             link: "/AI协作编码与上下文工程/Anthropic 黑客马拉松冠军- ClaudeCode配置整理和补充",
           },
+          {
+            text: "OpenAI与Anthropic的实战经验",
+            link: "/AI协作编码与上下文工程/编程Agent的工程实践：来自OpenAI与Anthropic的实战经验",
+          }
         ],
       },
       {
