@@ -199,7 +199,11 @@ export default {
           {
             text: "OpenAI与Anthropic的实战经验",
             link: "/AI协作编码与上下文工程/编程Agent的工程实践：来自OpenAI与Anthropic的实战经验",
-          }
+          },
+          {
+            text: "Anthropic团队如何使用Skills",
+            link: "/AI协作编码与上下文工程/构建ClaudeCode的经验教训：我们如何运行Skills",
+          },
         ],
       },
       {
