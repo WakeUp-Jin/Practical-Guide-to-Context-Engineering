@@ -118,6 +118,7 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
   - [JSON结构化输出的方法](./docs/结构化输出模块/JSON结构化输出的方法.md) 
   - [LLM输出格式成本：为什么JSON比TSV成本更高](./docs/结构化输出模块/LLM%20输出格式成本：为什么%20JSON%20比%20TSV%20成本更高.md) 
 - **LLM 模块**
+  - [学习和整理PI的LLM模块设计](./docs/LLM模块/学习和整理PI的LLM模块.md)
   - [LLM服务层的实现设计](./docs/LLM模块/LLM服务层的实现设计.md) 
   - [Cipher的LLM 服务架构分析文档](./docs/LLM模块/Cipher的LLM%20服务架构分析文档%20-TS版本.md) 
 

@@ -127,6 +127,10 @@ export default {
             collapsed: false,
             items: [
               {
+                text: "学习和整理PI的LLM模块设计",
+                link: "/LLM模块/学习和整理PI的LLM模块",
+              },
+              {
                 text: "LLM 服务层设计",
                 link: "/LLM模块/LLM服务层的实现设计",
               },
