@@ -220,7 +220,7 @@ export class EventStream<T, R = T> implements AsyncIterable<T> {
 
 ### 6\.1、Agent执行事件流
 
-![Agent执行事件流](./image/5.png)
+![Agent执行事件流](./image/事件流.png)
 
 一次完整的Agent事件流，里面会存在Agent生命周期，turn执行，消息输入，模型执行，工具执行，终止和错误这些状态存在，梳理清楚这些状态会非常有益于我们做执行日志记录和前端的执行显示
 
