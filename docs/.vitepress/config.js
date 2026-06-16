@@ -85,6 +85,7 @@ export default {
               },
               {text: "Bash工具实现和安全权限设计",link: "/工具管理模块/Bash工具实现和安全权限设计细节"},
               {text: "Grep和Glob工具详细设计",link: "/工具管理模块/Agent文件系统检索核心：Grep和Glob工具"},
+              {text: "Write和Edit工具的实现细节",link: "/工具管理模块/Write和Edit工具的实现细节"},
               {
                 text: "Kode 工具定义",
                 link: "/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理 -TS版本",
@@ -92,7 +93,10 @@ export default {
             ],
           },
           {
-            text: "用户记忆 [待补充]",
+            text: "用户记忆",
+            items: [
+              {text: "助手Agent记忆模块的设计",link: "/记忆模块/助手Agent记忆模块的设计"},
+            ],
           },
           {
             text: "会话存储",

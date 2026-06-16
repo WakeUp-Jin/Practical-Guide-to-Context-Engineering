@@ -109,8 +109,10 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
   - [工具调度与权限模块的开发](./docs/工具管理模块/工具调度与权限模块的开发.md) 
   - [Bash工具实现和安全权限设计细节](./docs/工具管理模块/Bash工具实现和安全权限设计细节.md)
   - [Agent文件检索核心：Grep和Glob工具的详细设计](./docs/工具管理模块/Agent文件系统检索核心：Grep和Glob工具.md)
+  - [Write和Edit工具的实现细节](./docs/工具管理模块/Write和Edit工具的实现细节.md)
   - [ClaudeCode逆向工程（Kode）的工具定义和管理](./docs/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理%20-TS版本.md) 
-- **用户记忆** *(待补充)*
+- **用户记忆**
+  - [助手Agent记忆模块的设计](./docs/记忆模块/助手Agent记忆模块的设计.md)
 - **会话存储**
   - [Redis缓存后端存储设计-读穿｜写穿](./docs/会话存储模块/Redis缓存后端存储设计-读穿｜写穿.md) 
   - [多后端存储设计-备份降级策略](./docs/会话存储模块/多后端存储设计-备份降级策略.md) 
