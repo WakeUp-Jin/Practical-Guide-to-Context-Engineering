@@ -109,6 +109,7 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
   - [工具管理概述](./docs/工具管理模块/工具管理.md) 
   - [工具调度与权限模块的开发](./docs/工具管理模块/工具调度与权限模块的开发.md) 
   - [Bash工具实现和安全权限设计细节](./docs/工具管理模块/Bash工具实现和安全权限设计细节.md)
+  - [Agent Bash 工具工程化：后台运行与沙盒权限设计](./docs/工具管理模块/Agent%20Bash%20工具工程化：后台运行与沙盒权限设计.md)
   - [Agent文件检索核心：Grep和Glob工具的详细设计](./docs/工具管理模块/Agent文件系统检索核心：Grep和Glob工具.md)
   - [Write和Edit工具的实现细节](./docs/工具管理模块/Write和Edit工具的实现细节.md)
   - [ClaudeCode逆向工程（Kode）的工具定义和管理](./docs/工具管理模块/ClaudeCode逆向工程（Kode）的工具定义和管理%20-TS版本.md) 
