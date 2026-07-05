@@ -84,6 +84,7 @@ export default {
                 link: "/工具管理模块/工具调度与权限模块的开发",
               },
               {text: "Bash工具实现和安全权限设计",link: "/工具管理模块/Bash工具实现和安全权限设计细节"},
+              {text: "Bash工具：后台运行与沙盒设计",link: "/工具管理模块/Agent Bash 工具工程化：后台运行与沙盒权限设计"},
               {text: "Grep和Glob工具详细设计",link: "/工具管理模块/Agent文件系统检索核心：Grep和Glob工具"},
               {text: "Write和Edit工具的实现细节",link: "/工具管理模块/Write和Edit工具的实现细节"},
               {
