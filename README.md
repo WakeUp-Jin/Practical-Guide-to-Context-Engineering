@@ -136,12 +136,14 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
 - **Agent 形态**
   - [两种世界的交互形态：协同Agent与自主Agent](./docs/Agent形态/两种世界的交互形态：协同Agent与自主Agent.md) 
   - [智能体系统构建策略：单智能体和多智能体](./docs/Agent形态/智能体系统构建策略-单智能体和多智能体.md) 
+  - [多智能体的协作方式-Agent Team和Agent Room](./docs/Agent形态/多智能体的协作方式-Agent%20Team和Agent%20Room.md)
 - **Agent 评估**
   - [Agent的评估](./docs/Agent评估/Agent的评估.md)：Agent 的评估方案和方法 
   - [实现Agent的评估器-TS版本](./docs/Agent评估/实现Agent的评估器-TS版本.md)：Agent 评估器 TS 版本实现 
   - [揭秘 AI 代理的评估 - 多种Agent的评估方法](./docs/Agent评估/评估多种类型Agent的方法.md) 
 - [定时任务与KAIROS模式](./docs/Agent运行空间/让Agent从被动变为主动：定时任务和KAIROS模式.md)：让Agent从被动变为主动 
 - [给Agent接入Browser-use的设计思路](./docs/Agent运行空间/给Agent接入Browser%20use的设计思路.md)
+
 
 ### 六、实践与案例
 - [ReasonCode 项目介绍](./docs/ReasonCode开发设计文档/首页：ReasonCode项目介绍.md) 
