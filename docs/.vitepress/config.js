@@ -171,6 +171,10 @@ export default {
                 text: "单智能体与多智能体",
                 link: "/Agent形态/智能体系统构建策略-单智能体和多智能体",
               },
+              {
+                text: "Agent Team和Agent Room",
+                link: "/Agent形态/多智能体的协作方式-Agent Team和Agent Room",
+              },
             ],
           },
           {
