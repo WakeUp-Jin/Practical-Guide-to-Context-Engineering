@@ -189,6 +189,10 @@ export default {
               {
                 text: "多种 Agent 评估方法",
                 link: "/Agent评估/评估多种类型Agent的方法",
+              {
+                text: "轨迹录制与离线重放回归",
+                link: "/Agent评估/用轨迹录制与离线重放做Agent回归评估",
+              },
               },
             ],
           },
