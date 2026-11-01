@@ -206,7 +206,7 @@ export default {
           },
           {
             text: "电商领域Harness实践",
-            link: "/Agent运行空间/Anthropic的电商领域Harness的实践经验",
+            link: "/Agent运行空间/Anthropic电商领域Harness的实践经验",
           }
         ],
       },

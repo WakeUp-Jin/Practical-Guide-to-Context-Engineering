@@ -144,7 +144,7 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
   - [揭秘 AI 代理的评估 - 多种Agent的评估方法](./docs/Agent评估/评估多种类型Agent的方法.md) 
 - [定时任务与KAIROS模式](./docs/Agent运行空间/让Agent从被动变为主动：定时任务和KAIROS模式.md)：让Agent从被动变为主动 
 - [给Agent接入Browser-use的设计思路](./docs/Agent运行空间/给Agent接入Browser%20use的设计思路.md)
-- [Anthropic的电商领域Harness的实践经验](./docs/Agent运行空间/Anthropic的电商领域Harness的实践经验.md)
+- [Anthropic电商领域Harness的实践经验](./docs/Agent运行空间/Anthropic电商领域Harness的实践经验.md)
 
 
 ### 六、实践与案例

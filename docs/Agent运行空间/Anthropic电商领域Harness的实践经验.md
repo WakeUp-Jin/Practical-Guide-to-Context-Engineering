@@ -1,4 +1,4 @@
-# Anthropic的电商领域Harness的实践经验
+# Anthropic电商领域Harness的实践经验
 
 核心：**我们将商务代理定义为一种简化在线目录中买卖流程的代理**。
 
