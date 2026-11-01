@@ -118,6 +118,7 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
 - **会话存储**
   - [Redis缓存后端存储设计-读穿｜写穿](./docs/会话存储模块/Redis缓存后端存储设计-读穿｜写穿.md) 
   - [多后端存储设计-备份降级策略](./docs/会话存储模块/多后端存储设计-备份降级策略.md) 
+  - [DSH的宝藏之一：Session持久化的设计](./docs/会话存储模块/DSH的宝藏之一：Session持久化的设计.md)
 - **结构化输出**
   - [JSON结构化输出的方法](./docs/结构化输出模块/JSON结构化输出的方法.md) 
   - [LLM输出格式成本：为什么JSON比TSV成本更高](./docs/结构化输出模块/LLM%20输出格式成本：为什么%20JSON%20比%20TSV%20成本更高.md) 
@@ -143,6 +144,7 @@ Harness Engineering 负责将其落地为稳定运行的 Agent 环境
   - [揭秘 AI 代理的评估 - 多种Agent的评估方法](./docs/Agent评估/评估多种类型Agent的方法.md) 
 - [定时任务与KAIROS模式](./docs/Agent运行空间/让Agent从被动变为主动：定时任务和KAIROS模式.md)：让Agent从被动变为主动 
 - [给Agent接入Browser-use的设计思路](./docs/Agent运行空间/给Agent接入Browser%20use的设计思路.md)
+- [Anthropic的电商领域Harness的实践经验](./docs/Agent运行空间/Anthropic的电商领域Harness的实践经验.md)
 
 
 ### 六、实践与案例

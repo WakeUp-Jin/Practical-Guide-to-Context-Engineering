@@ -111,6 +111,10 @@ export default {
                 text: "多后端备份降级",
                 link: "/会话存储模块/多后端存储设计-备份降级策略",
               },
+              {
+                text: "DSH Session持久化设计",
+                link: "/会话存储模块/DSH的宝藏之一：Session持久化的设计",
+              },
             ],
           },
           {
@@ -199,6 +203,10 @@ export default {
           {
             text: "给Agent接入Browser-use设计",
             link: "Agent运行空间/给Agent接入Browser use的设计思路",
+          },
+          {
+            text: "电商领域Harness实践",
+            link: "/Agent运行空间/Anthropic的电商领域Harness的实践经验",
           }
         ],
       },
